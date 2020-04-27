@@ -1,0 +1,127 @@
+\documentclass[10pt]{jsarticle}
+\pagestyle{empty}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[labelformat=simple]{subcaption}
+\AtBeginDvi{\special{papersize=210mm,297mm}}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bm}
+%\usepackage[psamsfonts]{amssymb}
+%\usepackage{txfonts}
+%\usepackage{type1cm}
+%\usepackage{latexsym}
+%\usepackage{psfrag}
+\usepackage{enumitem}
+\renewcommand\thesubfigure{(\alph{subfigure})}
+
+\begin{document}
+
+\begin{center}
+  {\bf \Large 信号処理のための数学365本ノック}
+\end{center}
+\begin{flushright}
+  Yuma Kinoshita
+\end{flushright}
+\setlength{\leftmarginii}{3pt}
+
+\begin{enumerate}[label=問\arabic*.]
+  \vspace{2mm}
+  % 問1
+  \item てすと
+  \vspace{1mm}
+  \begin{enumerate}[label=(\arabic*)]
+    \item まず，標準内積
+      $<\cdot, \cdot>_{\mathbb{C}^n}: \mathbb{C}^n \times \mathbb{C}^n \rightarrow \mathbb{R}$を持つ
+      $n$次元計量ベクトル空間$(\mathbb{C}^n, <\cdot, \cdot>_{\mathbb{C}^n})$の場合について証明する．
+
+      エルミート行列$\mathbf{A}$の固有値$\lambda_i, \lambda_j (i \neq j, \lambda_i \neq \lambda_j)$
+      とそれぞれに対応する固有ベクトル$\bm{u}_i, \bm{u}_j$を考える．
+      \begin{align}
+        \bm{u}_i^* \mathbf{A} \bm{u}_i &= \lambda_i \bm{u}_i^* \bm{u}_i, \\
+        (\mathbf{A} \bm{u}_i)^* \bm{u}_i &= (\lambda_i \bm{u}_i)^* \bm{u}_i
+          = \overline{\lambda_i} \bm{u}_i^* \bm{u}_i
+      \end{align}
+      および
+      \begin{align}
+        \bm{u}_i^* \mathbf{A} \bm{u}_i = \bm{u}_i^* \mathbf{A}^* \bm{u}_i
+          = (\mathbf{A} \bm{u}_i)^* \bm{u}_i
+      \end{align}
+      より，$\lambda_i = \overline{\lambda}_i$．
+      したがって，エルミート行列$\mathbf{A}$の固有値は実数である．
+
+      また，$\bm{x}, \bm{y} \in \mathbb{C}^n$について
+      $<\bm{x}, \bm{y}>_{\mathbb{C}^n} = \bm{x}^* \bm{y}$であるから，
+      \begin{align}
+        <\bm{u}_i, \mathbf{A} \bm{u}_j>_{\mathbb{C}^n} &= \bm{u}_i^* \mathbf{A} \bm{u}_j
+          = \lambda_j \bm{u}_i^* \bm{u}_j, \\
+        <\mathbf{A} \bm{u}_i, \bm{u}_j>_{\mathbb{C}^n} &= \overline{\lambda_i} \bm{u}_i^* \bm{u}_j
+          = \lambda_i \bm{u}_i^* \bm{u}_j
+      \end{align}
+      となる．
+      ここで，
+      \begin{align}
+        & <\bm{u}_i, \mathbf{A} \bm{u}_j>_{\mathbb{C}^n} \\
+          &= \bm{u}_i^* \mathbf{A} \bm{u}_j = \bm{u}_i^* \mathbf{A}^* \bm{u}_j
+          = (\mathbf{A} \bm{u}_i)^* \bm{u}_j, \\
+          &= <\mathbf{A} \bm{u}_i, \bm{u}_j>_{\mathbb{C}^n}
+          \label{eq:1}
+      \end{align}
+      より，$\lambda_j \bm{u}_i^* \bm{u}_j = \lambda_i \bm{u}_i^* \bm{u}_j$．
+      $\lambda_i \neq \lambda_j$だから
+      $\bm{u}_i^* \bm{u}_j = <\bm{u}_i, \bm{u}_j>_{\mathbb{C}^n} = 0$．
+      したがって，固有ベクトル$\bm{u}_i, \bm{u}_j$は標準内積のもとで直交する．
+      
+      次に，任意の内積
+      $<\cdot, \cdot>: \mathbb{C}^n \times \mathbb{C}^n \rightarrow \mathbb{R}$を持つ
+      $n$次元計量ベクトル空間$V = (\mathbb{C}^n, <\cdot, \cdot>)$の場合について証明する．
+
+      $V$の正規直交基底$\{\bm{e}_1, \cdots, \bm{e}_n\}$に関する$\bm{a}, \bm{b}$の座標を
+      それぞれ$\bm{x}=(x_1, \cdots, x_n)^\top, \bm{y}=(y_1, \cdots, y_n)^\top$とすれば，
+      \begin{align}
+        <\bm{a}, \bm{b}> \\
+          &= <x_1 \bm{e}_1 + \cdots + x_n \bm{e}_n, y_1 \bm{e}_1 + \cdots + y_n \bm{e}_m> \\
+          &= \sum_{i, j = 1, \cdots, n} <x_i \bm{e}_i, y_j \bm{e}_j>
+          = <\bm{x}, \bm{y}>_{\mathbb{C}^n}
+          \label{eq:2}
+      \end{align}
+      が成り立つ．
+      式(\ref{eq:1})および式(\ref{eq:2})から，エルミート行列$\mathbf{A}$について
+      \begin{equation}
+        <\mathbf{A} \bm{a}, \bm{b}> = <\mathbf{A} \bm{x}, \bm{y}>_{\mathbb{C}^n}
+          = <\bm{x}, \mathbf{A} \bm{y}>_{\mathbb{C}^n} = <\bm{a}, \mathbf{A} \bm{b}>
+      \end{equation}
+      が成立する．
+      また，内積は$\alpha, \beta \in \mathbb{C}$について以下の性質を満たす．
+      \begin{align}
+        <\alpha \bm{a}, \bm{b}> &= \overline{\alpha} <\bm{a}, \bm{b}> \\
+        <\bm{a}, \beta \bm{b}> &= \beta <\bm{a}, \bm{b}>
+      \end{align}
+      したがって，$\mathbf{A}$の固有ベクトル$\bm{u}_i, \bm{u}_j$について
+      \begin{align}
+        <\bm{u}_i, \mathbf{A} \bm{u}_j> &= <\bm{u}_i, \lambda_j \bm{u}_j> = \lambda_j <\bm{u}_i, \bm{u}_j>, \\
+        <\mathbf{A} \bm{u}_i, \bm{u}_j> &= <\lambda_i \bm{u}_i, \bm{u}_j> = \lambda_i <\bm{u}_i, \bm{u}_j>, \\
+        <\bm{u}_i, \mathbf{A} \bm{u}_j> &= <\mathbf{A} \bm{u}_i, \bm{u}_j>
+      \end{align}
+      が成り立つから，
+      $\lambda_i \neq \lambda_j$より
+      $<\bm{u}_i, \bm{u}_j> = 0$．
+      したがって，固有ベクトル$\bm{u}_i, \bm{u}_j$は任意の内積について直交する．
+
+    \item 固有値分解$\mathbf{A} = \mathbf{U}\mathbf{\Lambda}\mathbf{U}^{-1}$における行列$\mathbf{U}$は，
+      $\mathbf{A}$の固有ベクトルを並べた行列である．
+      1の結果から，$\mathbf{A}$の固有ベクトルは直交するため，長さが1となるように固有ベクトルを選べば
+      $\mathbf{U}$は正規直交基底を並べたベクトルとなる．
+      したがって$\mathbf{U}$はユニタリ行列であり，
+      $\mathbf{A} = \mathbf{U}\mathbf{\Lambda}\mathbf{U}^*$として与えられる．
+    \item $\mathbf{X} = \mathbf{U}\mathbf{\Lambda}^{-1}\mathbf{U}^*$とすると
+      \begin{equation}
+        \mathbf{X}\mathbf{A}
+          = \mathbf{U}\mathbf{\Lambda}^{-1}\mathbf{U}^* \mathbf{U}\mathbf{\Lambda}\mathbf{U}^*
+          = \mathbf{E}.
+      \end{equation}
+      同様に，$\mathbf{A}\mathbf{X} = \mathbf{E}$．
+      以上より，$\mathbf{X} = \mathbf{A}^{-1}$．
+  \end{enumerate}
+  
+\end{enumerate}
+\end{document}
