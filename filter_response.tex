@@ -33,7 +33,7 @@
     \item フィルタのインパルス応答が$h[0] = 1, h[1] = -0.97$であることより，
       周波数応答$H(\omega)$(インパルス応答の離散時間フーリエ変換)は
       \begin{align}
-        H(\omega) &= \sum_{n = -\infty}^{\infty} h[n] e^{-j\omega} \\
+        H(\omega) &= \sum_{n = -\infty}^{\infty} h[n] e^{-j\omega n} \\
                   &= 1 - 0.97 e^{-j \omega}
       \end{align}
       となる．ここで，$j$は虚数単位，$\omega$は正規化角周波数をそれぞれ表す．
