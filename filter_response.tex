@@ -1,0 +1,60 @@
+\documentclass[10pt]{jsarticle}
+\pagestyle{empty}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[labelformat=simple]{subcaption}
+\AtBeginDvi{\special{papersize=210mm,297mm}}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bm}
+%\usepackage[psamsfonts]{amssymb}
+%\usepackage{txfonts}
+%\usepackage{type1cm}
+%\usepackage{latexsym}
+%\usepackage{psfrag}
+\usepackage{enumitem}
+\renewcommand\thesubfigure{(\alph{subfigure})}
+
+\begin{document}
+
+\begin{center}
+  {\bf \Large 信号処理のための数学365本ノック}
+\end{center}
+\begin{flushright}
+  Yuma Kinoshita
+\end{flushright}
+\setlength{\leftmarginii}{3pt}
+
+\begin{enumerate}[label=問\arabic*.]
+  \vspace{2mm}
+  % 問1
+  \item てすと
+  \vspace{1mm}
+  \begin{enumerate}[label=(\arabic*)]
+    \item フィルタのインパルス応答が$h[0] = 1, h[1] = -0.97$であることより，
+      周波数応答$H(\omega)$(インパルス応答の離散時間フーリエ変換)は
+      \begin{align}
+        H(\omega) &= \sum_{n = -\infty}^{\infty} h[n] e^{-j\omega} \\
+                  &= 1 - 0.97 e^{-j \omega}
+      \end{align}
+      となる．ここで，$j$は虚数単位，$\omega$は正規化角周波数をそれぞれ表す．
+      このフィルタの振幅特性$|H(\omega)|$は，
+      \begin{align}
+        |H(\omega)| &= | 1 - 0.97 e^{-j \omega}| \\
+                    &= | 1 - 0.97 (\cos \omega - j \sin \omega)| \\
+                    &= \sqrt{(1 - 0.97 \cos \omega)^2 + (0.97 j \sin \omega)^2} \\
+                    &= \sqrt{1 - 2 \times 0.97 \cos \omega + 0.97^2 \cos^2 \omega
+                     + 0.97^2 \sin^2 \omega} \\
+                    &= \sqrt{(1 + 0.97^2) - 2 \times 0.97 \cos \omega}
+      \end{align}
+      である．
+      $H(\omega)$は周期$2\pi$を持ち，$|H(\omega)|$は偶対象である．
+      よって，$0 \le \omega < \pi$の範囲のみを考える．
+      $|H(\omega)|$は$0 \le \omega \pi$の範囲で単調増加し，
+      $\omega = 97 / 200 < \pi$のとき$|H(\omega) = 1|$となる．
+      したがって，このフィルタ$h$は，
+      $\omega > 97 / 200$の周波数成分を強調し
+      $\omega < 97 / 200$の周波数成分を減衰させる高域強調フィルタである．
+  \end{enumerate}
+  
+\end{enumerate}
+\end{document}
