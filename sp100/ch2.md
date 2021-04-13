@@ -4,22 +4,6 @@
 
     1. 
 
-    $$
-    \mathrm{A}=\left( \begin{array}{rrr} -2 & -4 & -3 \\ 3 & 3 & -4 \\ -5 & 2 & 3 \end{array} \right), b=\left( \begin{array}{r} -29 \\ 12 \\ -17 \end{array} \right), x \in \mathbb{R}^3
-    $$
-
-    とする．
-       - このとき，方程式 $\mathrm{A}x-b=0$ を解け．
-    
-    1. $$\mathrm{A}=\left( \begin{array}{rrr} 1 & 1 \\ 1 & -1 \\ 0 & 1 \end{array} \right), b=\left( \begin{array}{r} 1 \\ 1 \\ 2 \end{array} \right), x \in \mathbb{R}^2$$
-    とする．
-       - このとき，方程式 $\mathrm{A}x-b=0$ を解け．
-       - $n$ 次元ベクトル $v$ のノルム $\|v\|$ を $\|v\| = \sqrt{\sum_{i=1}^n v_i^2}$ とする．$\|\mathrm{A}x-b\|$ が最小となる $x$ を求めよ．
-    
-    1. $$\mathrm{A}=\left( \begin{array}{rrr} 2 & 4 & 1 &-1 \\\ 1 & 2 & -1 & 1 \\\ 2 & 1 & 1 & 2 \\\ 1 & 3 & 2 & -3 \end{array} \right), b=\left( \begin{array}{r} 1 \\\ 2 \\\ -2 \\\ 0 \end{array} \right), x \in \mathbb{R}^4$$
-    とする．
-       - このとき，方程式 $\mathrm{A}x-b=0$ を解け．
-       - $n$ 次元ベクトル $v$ のノルム $\|v\|$ を $\|v\| = \sqrt{\sum_{i=1}^n v_i^2}$ とする．$\mathrm{A}x-b=0$の解$x$のうち，$\|x\|$が最小となるものを求めよ．
     
     $$\mathrm{A}=\left( \begin{array}{rrr} -2 & -4 & -3 \\ 3 & 3 & -4 \\ -5 & 2 & 3 \end{array} \right), b=\left( \begin{array}{r} -29 \\ 12 \\ -17 \end{array} \right), x \in \mathbb{R}^3$$
     とします．
