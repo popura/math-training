@@ -1,0 +1,41 @@
+\documentclass[10pt]{jsarticle}
+\pagestyle{empty}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[labelformat=simple]{subcaption}
+\AtBeginDvi{\special{papersize=210mm,297mm}}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bm}
+%\usepackage[psamsfonts]{amssymb}
+%\usepackage{txfonts}
+%\usepackage{type1cm}
+%\usepackage{latexsym}
+%\usepackage{psfrag}
+\usepackage{enumitem}
+\renewcommand\thesubfigure{(\alph{subfigure})}
+
+\DeclareMathOperator{\rank}{rank}
+
+\begin{document}
+
+\begin{center}
+  {\bf \Large 信号処理100本ノック 解答}
+\end{center}
+\begin{flushright}
+  Yuma Kinoshita
+\end{flushright}
+\setlength{\leftmarginii}{3pt}
+
+% \clearpage
+% \input{./chapter01/unix.tex}
+
+\clearpage
+\input{./chapter02/linalg.tex}
+
+% \clearpage
+% \input{./chapter03/calculus.tex}
+
+% \clearpage
+% \input{./chapter07/lti_system.tex}
+
+\end{document}

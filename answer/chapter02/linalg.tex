@@ -1,0 +1,299 @@
+\section{線形代数の基礎}
+
+\begin{enumerate}[label=問\arabic*.]
+  \vspace{2mm}
+  %
+  \item 連立方程式
+
+  \vspace{1mm}
+  \begin{enumerate}[label=(\roman*)]
+    \item
+    拡大係数行列$\tilde{\mathrm{A}} = (\mathrm{A}|b)$に対し，拡大係数行列の左側が以下のような行列
+    (対角に相当する成分のみ1を含み，他の成分がすべて0である行列) となるよう，
+    行基本変形を施す．
+    \begin{equation}
+      \left(
+        \begin{array}{rrrrrrr}
+          1 &   &        &   &   &        & 0 \\
+            & 1 &        &   &   &        &   \\
+            &   & \ddots &   &   &        &   \\
+            &   &        & 1 &   &        &   \\
+            &   &        &   & 0 &        &   \\
+            &   &        &   &   & \ddots &   \\
+          0 &   &        &   &   &        & 0 \\
+        \end{array}
+      \right)
+    \end{equation}
+    この結果得られる拡大係数行列の右側が元の方程式の解に相当する．
+    よって解$x$は，
+    \begin{equation}
+      x = \left(
+        \begin{array}{r}
+          6 \\ 2 \\ 3
+        \end{array}
+        \right)
+    \end{equation}
+    である．
+    
+    \item
+    \begin{itemize}
+      \item (i)と同様に拡大係数行列$\tilde{\mathrm{A}} = (\mathrm{A}|b)$を変形すると以下を得る
+        (変形を途中でやめていることに注意)．
+        \begin{equation}
+          \left(
+            \begin{array}{rr|r}
+              1 & 1 & 1 \\
+              0 & 1 & 0 \\
+              0 & 0 & 2 \\
+            \end{array}
+          \right)
+        \end{equation}
+        このことから，
+        $\rank(\mathrm{A}) \neq \rank(\tilde{\mathrm{A}})$であり，
+        $Ax - b = 0$は解を持たない．
+      \item $\|\mathrm{A}x-b\|$ を最小とする $x$ は，
+      $\|\mathrm{A}x-b\|^2$ を最小とする $x$ と等しい．
+      よって，$\|\mathrm{A}x-b\|^2$ を最小とする $x$ を考える．
+      $\|\mathrm{A}x-b\|^2$は二次式だから，
+      \begin{equation}
+        \frac{\partial}{\partial x} \| \mathrm{A}x-b \|^2 = 0
+      \end{equation}
+      を満たす$x$を求めればよい．
+      上式を解くと，
+      \begin{equation}
+        x = (\mathrm{A}^\top \mathrm{A})^{-1} \mathrm{A}^\top b
+      \end{equation}
+      を得る．
+      したがって，
+      \begin{equation}
+        x = \left(
+          \begin{array}{r}
+             1 \\
+             \frac{2}{3} \\
+          \end{array}
+          \right).
+      \end{equation}
+      \begin{enumerate}[label=別解\arabic*]
+        \item $\|\mathrm{A}x-b\|^2$を$x$の各要素について平方完成して最小値を求める
+        \item $\|\mathrm{A}x-b\|^2$を$x$の各要素について微分して，
+          \begin{equation}
+            \frac{\partial}{\partial x_1} \| \mathrm{A}x-b \|^2
+            = \frac{\partial}{\partial x_2} \| \mathrm{A}x-b \|^2 = 0
+          \end{equation}
+          を解き，最小値を求める．
+      \end{enumerate}
+    \end{itemize}
+
+    \item
+    \begin{itemize}
+      \item (i)と同様に拡大係数行列$\tilde{\mathrm{A}} = (\mathrm{A}|b)$を変形すると以下を得る．
+        \begin{equation}
+          \left(
+            \begin{array}{rrrr|r}
+              1 & 0 & 0 &  2 & -1 \\
+              0 & 1 & 0 & -1 &  1 \\
+              0 & 0 & 1 & -1 & -1 \\
+              0 & 0 & 0 &  0 &  0 \\
+            \end{array}
+          \right)
+        \end{equation}
+        よって，解$x$は，任意の$t \in \mathbb{R}$を用いて
+        \begin{equation}
+          x = t
+            \left(
+            \begin{array}{r}
+              -2 \\ 1 \\ 1 \\ 1
+            \end{array}
+            \right)
+            +
+            \left(
+            \begin{array}{r}
+              -1 \\ 1 \\ -1 \\ 0
+            \end{array}
+            \right)
+        \end{equation}
+        として与えられる．
+      \item $\|x\|$ を最小とする $x$ は，
+      $\|x\|^2$ を最小とする $x$ と等しい．
+      よって，$\|x\|^2$ を最小とする $x$ を考える．
+      $\|x\|^2$は二次式だから，
+      \begin{equation}
+        \frac{d}{dt} \| x \|^2 = 0
+      \end{equation}
+      を満たす$x$を求めればよい．
+      上式を解くと，
+      \begin{equation}
+        t = -\frac{2}{7}
+      \end{equation}
+      を得る．
+      したがって，
+      \begin{equation}
+        x = -\frac{1}{7}
+          \left(
+          \begin{array}{r}
+              3 \\
+             -5 \\
+              9 \\
+              2
+          \end{array}
+          \right).
+      \end{equation}
+      \begin{enumerate}[label=別解\arabic*]
+        \item $\|\mathrm{A}x-b\|^2$を$t$について平方完成して最小値を求める
+      \end{enumerate}
+    \end{itemize}
+  \end{enumerate}
+  %
+  \item 線形変換
+
+  \vspace{1mm}
+  ${\boldsymbol x}$，${\boldsymbol y}$を互いに線形独立な縦ベクトルとする．
+  いま${\boldsymbol y}$を，
+  \begin{equation}
+    {\boldsymbol y}=a{\boldsymbol x}+{\boldsymbol x}_{\perp}
+  \end{equation}
+  のように表したい．
+  ここで，$a$はスカラー，${\boldsymbol x}_{\perp}$は${\boldsymbol x}$と直交するベクトルを表す．
+  すなわち，${\boldsymbol x}^{\rm T}{\boldsymbol x}_{\perp}=0$である．
+  \begin{enumerate}[label=(\roman*)]
+    \item $a$を求めよ．
+    \item ${\boldsymbol y}$から$a{\boldsymbol x}$を得る演算は，ある行列${\boldsymbol A}$を用いて，
+      ${\boldsymbol A}{\boldsymbol y}=a{\boldsymbol x}$とかくことができる．${\boldsymbol A}$を求めよ．
+  \end{enumerate}
+  %
+  \item 行列のランク
+
+  \vspace{1mm}
+  2つの行列$\boldsymbol{A}$，$\boldsymbol{B}$の積として，
+  $\boldsymbol{C}=\boldsymbol{A}\boldsymbol{B}$で表される行列$\boldsymbol{C}$のランクについて考える．
+  ただし，行列$\boldsymbol{C}$のサイズは$5\times 4$である．
+
+  \begin{enumerate}[label=(\roman*)]
+    \item 行列$\boldsymbol{A}$，$\boldsymbol{B}$として，
+      それぞれ$5\times 1$，$1\times 4$の適当な行列を自分で考え，$\boldsymbol{C}$を計算しなさい．
+      ただし，$\boldsymbol{A}$，$\boldsymbol{B}$は零行列（すべての要素が0の行列）ではないものとします．
+    \item (i)のとき、行列$\boldsymbol{C}$のランクを求めなさい．
+      理由をつけて答えても，1)の答えを階段化するなどして答えても結構です．
+    \item 行列$\boldsymbol{A}$，$\boldsymbol{B}$として，
+      それぞれ$5\times 2$，$2\times 4$の適当な行列を自分で考え，$\boldsymbol{C}$を計算しなさい．
+      ただし，$\boldsymbol{A}$，$\boldsymbol{B}$はフルランクの行列（$m\times n$行列のランクが$m$と$n$の小さいほうに等しいとき，この行列をフルランクであるという）であるものとします．
+    \item (iii)のとき、行列$\boldsymbol{C}$のランクを求めなさい．
+      理由をつけて答えても，3)の答えを階段化するなどして答えても結構です．
+    \item 行列$\boldsymbol{A}$，$\boldsymbol{B}$が，
+      それぞれ$5\times N$，$N\times 4$のサイズであったとき，
+      行列$\boldsymbol{C}$のランクがいくつになるか答えなさい．証明なしでも結構です．
+      ただし，$N\in \mathbb{N}$で，$\boldsymbol{A}$，$\boldsymbol{B}$はフルランクの行列であるとします．
+      必要であれば、$N$で場合分けしてください．
+  \end{enumerate}
+  %
+  \item 逆行列，固有値分解
+
+  \vspace{1mm}
+  ベクトル$x \in \mathbb{R}^2$を原点中心に$\theta$だけ（反時計回りに）回転させたベクトル$y$は，
+  行列$\mathbf{R}_\theta$を用いて$y = \mathbf{R}_\theta x$と与えられる．
+  \begin{enumerate}[label=(\roman*)]
+    \item $\mathbf{R}_\theta$を求めよ．
+    \item $\mathbf{R}_\theta$の逆行列を求めよ．
+    \item $\mathbf{R}_\theta$の固有値，固有ベクトルを求めよ．
+    \item 正則行列$\mathbf{U}$および対角行列$\mathbf{\Lambda}$を用いて，
+      $\mathbf{R}_\theta = \mathbf{U}\mathbf{\Lambda} \mathbf{U}^{-1}$の形で$\mathbf{R}_\theta$を表せ．
+  \end{enumerate}
+
+  \item エルミート行列の性質
+
+  \vspace{1mm}
+  エルミート行列$\mathrm{A}$の固有値分解$\mathrm{A} = \mathrm{U}\mathrm{\Lambda}\mathrm{U}^{-1}$を考える．
+  \begin{enumerate}[label=(\roman*)]
+    % \item エルミート行列$\mathrm{A}$の異なる固有値に対応する固有ベクトルが，任意の内積について直交することを示せ．
+    \item 任意の複素ベクトル$\bm{v}=(v_1, \cdots, v_n)^{\top}$のとき，
+      $\bm{v}^{\rm H}\bm{v}\geq0$を証明せよ．
+    \item もしくはエルミート行列の固有値$\lambda$が実数になることを証明せよ．
+    \item エルミート行列$\mathrm{A}$の固有値分解が
+      $\mathrm{A} = \mathrm{U}\mathrm{\Lambda}\mathrm{U}^{\dagger}$ として与えられることを示せ．
+      ここで， $\cdot^\dagger$ はエルミート転置を表す．
+    \item フルランクを持つエルミート行列$\mathrm{A}$の逆行列$\mathrm{A}^{-1}$が，
+      $\mathrm{A}^{-1} = \mathrm{U}\mathrm{\Lambda}^{-1}\mathrm{U}^{\dagger}$として与えられることを示せ．
+  \end{enumerate}
+
+  \item 特異値分解
+
+  \vspace{1mm}
+  行列$\mathrm{A}$は，各行が直交する行列$\mathrm{U}, \mathrm{V}$，
+  および対角行列$\mathrm{\Sigma}$を用いて
+  $\mathrm{A}=\mathrm{U}\mathrm{\Sigma}\mathrm{V}^*$の形に分解できる．
+  これを特異値分解と呼ぶ．ここで，$\cdot^{\dagger}$はエルミート転置を表す．
+  \begin{enumerate}[label=(\roman*)]
+    \item
+      \begin{equation}
+        \mathrm{A} = \left(
+          \begin{array}{rr}
+            1 & 1 \\
+            1 & -1 \\
+            0 & 1
+          \end{array}
+          \right)
+      \end{equation}
+      の特異値分解を求めよ．
+    \item
+      \begin{equation}
+        \mathrm{A} = \left(
+          \begin{array}{rrrr}
+            2 & 4 & 1 &-1 \\
+            1 & 2 & -1 & 1 \\
+            2 & 1 & 1 & 2 \\
+            1 & 3 & 2 & -3
+          \end{array}
+          \right)
+      \end{equation}の特異値分解を求めよ．
+      ただし，この特異値分解に限り，プログラム等を用いて解答してもよい．
+  \end{enumerate}
+
+  \item Moore-Penroseの擬似逆行列
+
+  \vspace{1mm}
+  行列$\mathrm{A}$について，以下の4条件
+  \begin{itemize}
+    \item $\mathrm{A}\mathrm{A}^{\dagger}\mathrm{A}=\mathrm{A},$
+    \item $\mathrm{A}^{\dagger}\mathrm{A}\mathrm{A}^{\dagger}=\mathrm{A}^{\dagger},$
+    \item $(\mathrm{A}\mathrm{A}^{\dagger})^*=\mathrm{A}\mathrm{A}^{\dagger},$
+    \item $(\mathrm{A}^{\dagger}\mathrm{A})^*=\mathrm{A}^{\dagger}\mathrm{A}$
+  \end{itemize}
+  を満たす行列$\mathrm{A}^{\dagger}$をMoore-Penroseの擬似逆行列と呼ぶ．
+  ここで，$\mathrm{A}$が正則行列ならば，$\mathrm{A}^{\dagger}=\mathrm{A}^{-1}$を満たす．
+  また，$\mathrm{A}$の特異値分解が
+  $\mathrm{A}=\mathrm{U}\mathrm{\Sigma}\mathrm{V}^*$として与えられるとき，
+  $\mathrm{A}^{\dagger}=\mathrm{V}\mathrm{\Sigma}^{\dagger}\mathrm{U}^*$が成り立つ．
+  第17問の結果を用いて以下の問いに答えよ．
+  \begin{enumerate}[label=(\roman*)]
+    \item
+      \begin{equation}
+        \mathrm{A} = \left(
+          \begin{array}{rr}
+            1 & 1 \\
+            1 & -1 \\
+            0 & 1
+          \end{array}
+          \right)
+      \end{equation}
+      について，$\mathrm{A}^{\dagger}$を求めよ．
+      また，$b=\left( \begin{array}{r} 1 \\ 1 \\ 2 \end{array} \right)$のとき，
+      $\mathrm{A}^{\dagger} b$を計算し，
+      その結果を第3問で計算した$x$と比較せよ．
+    \item
+      \begin{equation}
+        \mathrm{A} = \left(
+          \begin{array}{rrrr}
+            2 & 4 & 1 & -1 \\
+            1 & 2 & -1 & 1 \\
+            2 & 1 & 1 & 2 \\
+            1 & 3 & 2 & -3
+          \end{array}
+          \right)
+      \end{equation}
+      について，$\mathrm{A}^{\dagger}$を求めよ．
+      また，$b=\left( \begin{array}{r} 1 \\ 2 \\ -2 \\ 0 \end{array} \right)$のとき，
+      $\mathrm{A}^{\dagger} b$を計算し，その結果を第6問で計算した$x$と比較せよ．
+      ただし，この計算に限り，プログラム等を利用して解答してもよい．
+  \end{enumerate}
+  
+\end{enumerate}

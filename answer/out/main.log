@@ -1,10 +1,10 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.1)  15 APR 2021 10:56
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.1)  15 APR 2021 12:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/popura/math-training/sp100/main.tex
-(c:/Users/popura/math-training/sp100/main.tex
+**c:/Users/popura/math-training/answer/main.tex
+(c:/Users/popura/math-training/answer/main.tex
 pLaTeX2e <2020-10-01>+1 (based on LaTeX2e <2020-10-01> patch level 2)
 L3 programming layer <2020-10-27> xparse <2020-03-03> (c:/texlive/2020/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 Document Class: jsarticle 2020/10/09 jsclasses (okumura, texjporg)
@@ -179,52 +179,49 @@ File: l3backend-dvips.def 2020-09-24 L3 backend support: dvips
 ) (out/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 20.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 20.
+(Font)              scaled to size 9.60999pt on input line 22.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 20.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 20.
+(Font)              scaled to size 9.60999pt on input line 22.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 20.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 20.
+(Font)              scaled to size 13.83836pt on input line 22.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 20.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 20.
+(Font)              scaled to size 13.83836pt on input line 22.
 [1
 
-] (./chapter01/unix.tex
+] (./chapter02/linalg.tex
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 1.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 1.
-) [2
-
-] (./chapter02/linalg.tex
 
 Package enumitem Warning: Negative labelwidth. This does not make much
 (enumitem)                sense, on input line 9.
@@ -245,68 +242,46 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 4.805pt on input line 11.
-
-Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 76.
-
-
-Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 89.
-
-[3
+[2
 
 ]
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 112.
+(enumitem)                sense, on input line 158.
 
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 124.
+(enumitem)                sense, on input line 171.
+
+[3]
+
+Package enumitem Warning: Negative labelwidth. This does not make much
+(enumitem)                sense, on input line 194.
 
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 143.
+(enumitem)                sense, on input line 206.
 
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 174.
-
-[4]
-
-Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 185.
-
-) [5] (./chapter03/calculus.tex
-
-Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 31.
+(enumitem)                sense, on input line 225.
 
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 52.
+(enumitem)                sense, on input line 256.
 
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 64.
+(enumitem)                sense, on input line 267.
 
-) [6
-
-] (./chapter07/lti_system.tex
-
-Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 8.
-
-) [7
-
-] (out/main.aux) ) 
+[4]) [5] (out/main.aux) ) 
 Here is how much of TeX's memory you used:
- 3472 strings out of 479956
- 55435 string characters out of 5887571
- 355900 words of memory out of 5000000
- 20663 multiletter control sequences out of 15000+600000
+ 3459 strings out of 479956
+ 55179 string characters out of 5887571
+ 353915 words of memory out of 5000000
+ 20662 multiletter control sequences out of 15000+600000
  546734 words of font info for 82 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 66i,9n,74p,358b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,9n,74p,359b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/main.dvi (7 pages, 18208 bytes).
+Output written on out/main.dvi (5 pages, 14108 bytes).
