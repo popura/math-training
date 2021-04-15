@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.1)  15 APR 2021 10:56
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.1)  15 APR 2021 18:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -179,42 +179,42 @@ File: l3backend-dvips.def 2020-09-24 L3 backend support: dvips
 ) (out/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 20.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 20.
+(Font)              scaled to size 9.60999pt on input line 28.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 20.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 20.
+(Font)              scaled to size 9.60999pt on input line 28.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 20.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 20.
+(Font)              scaled to size 13.83836pt on input line 28.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 20.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 20.
+(Font)              scaled to size 13.83836pt on input line 28.
 [1
 
 ] (./chapter01/unix.tex
@@ -247,66 +247,61 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 4.805pt on input line 11.
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 76.
+(enumitem)                sense, on input line 86.
 
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 89.
+(enumitem)                sense, on input line 99.
 
 [3
 
 ]
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 112.
+(enumitem)                sense, on input line 122.
 
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 124.
+(enumitem)                sense, on input line 134.
 
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 143.
+(enumitem)                sense, on input line 153.
 
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 174.
+(enumitem)                sense, on input line 182.
 
 [4]
 
-Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 185.
-
-) [5] (./chapter03/calculus.tex
-
-Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 31.
+LaTeX Warning: Reference `linalg:svd' on page 5 undefined on input line 192.
 
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 52.
+(enumitem)                sense, on input line 193.
+
+
+LaTeX Warning: Reference `linalg:linear_system' on page 5 undefined on input line 206.
+
+
+LaTeX Warning: Reference `linalg:linear_system' on page 5 undefined on input line 220.
 
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 64.
+(enumitem)                sense, on input line 235.
 
-) [6
-
-] (./chapter07/lti_system.tex
-
-Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 8.
-
-) [7
-
-] (out/main.aux) ) 
+./chapter02/linalg.tex:235: Missing number, treated as zero.
+<to be read again> 
+                   \c@* 
+l.235     \begin{enumerate}{label=(\roman*
+                                          )} 
 Here is how much of TeX's memory you used:
- 3472 strings out of 479956
- 55435 string characters out of 5887571
- 355900 words of memory out of 5000000
- 20663 multiletter control sequences out of 15000+600000
+ 3471 strings out of 479956
+ 55292 string characters out of 5887571
+ 353957 words of memory out of 5000000
+ 20672 multiletter control sequences out of 15000+600000
  546734 words of font info for 82 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 66i,9n,74p,358b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,8n,74p,358b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/main.dvi (7 pages, 18208 bytes).
+Output written on out/main.dvi (4 pages, 9236 bytes).
