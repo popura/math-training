@@ -12,7 +12,9 @@
 %\usepackage{latexsym}
 %\usepackage{psfrag}
 \usepackage{enumitem}
-\renewcommand\thesubfigure{(\alph{subfigure})}
+
+\renewcommand{\thesubsection}{問\arabic{subsection}}
+\renewcommand{\thesubfigure}{(\alph{subfigure})}
 
 \newcommand{\vecsym}[1]{\boldsymbol{#1}}
 \newcommand{\matsym}[1]{\mathrm{#1}}
@@ -21,6 +23,7 @@
 \newcommand{\pinv}[1]{#1^\dagger}
 \newcommand{\numset}[1]{\mathbb{#1}}
 \DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\trace}{trace}
 
 \begin{document}
 
@@ -32,6 +35,13 @@
 \end{flushright}
 \setlength{\leftmarginii}{3pt}
 
+{\makeatletter
+\let\ps@jpl@in\ps@empty
+\makeatother
+\pagestyle{plainfoot}
+\tableofcontents
+\clearpage}
+
 \clearpage
 \input{./chapter01/unix.tex}
 
@@ -42,6 +52,24 @@
 \input{./chapter03/calculus.tex}
 
 \clearpage
+\input{./chapter04/statistics.tex}
+
+\clearpage
+\input{./chapter05/signal.tex}
+
+\clearpage
+\input{./chapter06/fourier.tex}
+
+\clearpage
 \input{./chapter07/lti_system.tex}
+
+\clearpage
+\input{./chapter08/multirate.tex}
+
+\clearpage
+\input{./chapter09/acoustic_signal.tex}
+
+\clearpage
+\input{./chapter10/image_signal.tex}
 
 \end{document}

@@ -1,11 +1,6 @@
 \section{微積分}
 
-\begin{enumerate}[label=問\arabic*.]
-  \vspace{2mm}
-  %
-  \item 勾配ベクトル
-
-    \vspace{1mm}
+\subsection{勾配ベクトル}
     関数 $f: \mathbb{R}^n \rightarrow \mathbb{R}$ のベクトル $x \in \mathbb{R}^n$ に関する微分（勾配）を，
     \begin{equation}
       \frac{\partial f}{\partial x} = \left(
@@ -34,37 +29,45 @@
       \item $\frac{\partial}{\partial x} a^\top x = a$
       \item $\frac{\partial}{\partial x} x^\top \mathrm{A} x = 2 \mathrm{A} x$
     \end{enumerate}
-  %
-  \item 勾配，行列
 
-    \vspace{1mm}
-    実数のスカラー関数 $g(\mathbf X)$ の行列 $\mathbf X$ についての偏微分が
-    \begin{equation}
-      \frac{\partial g}{\partial \mathbf X} =
-      \begin{bmatrix}
-        \displaystyle
-        \frac{\partial g}{\partial x_{11}}&\cdots&\displaystyle \frac{\partial g}{\partial x_{1N}}\\
-        \vdots& &\vdots\\
-        \displaystyle \frac{\partial g}{\partial x_{M1}}&\cdots&\displaystyle \frac{\partial g}{\partial x_{MN}}
-      \end{bmatrix}
-    \end{equation}
-    で定義されるとき，以下の等式を証明せよ．
-    \begin{enumerate}[label=(\roman*)]
-      \item $\frac{\partial}{\partial \mathbf{X}}{\mathrm{tr}}(\mathbf{X})={\mathbf{I}}$
-      \item $\frac{\partial}{\partial \mathbf{X}}{\mathrm{tr}}({\mathbf{A}}{\mathbf{X}})={\mathbf{A}}^{\top}$
-      \item $\frac{\partial}{\partial \mathrm{X}}{\mathrm{tr}}({\mathbf{A}}{\mathbf{X}}^{\top})={\mathbf{A}}$
-      \item $\frac{\partial}{\partial \mathbf{X}}{\mathrm{tr}}({\mathbf{A}}{\mathbf{X}}{\mathbf{B}})={\mathbf{A}}^{\top}{\mathbf{B}}^{\top}$
-    \end{enumerate}
-    ただし，$\mathbf{A}$は各行列積が定義できるサイズとする．
-  %
-  \item 微分の連鎖律
+\subsection{勾配，行列}
+  実数のスカラー関数 $g(\mathbf X)$ の行列 $\mathbf X$ についての偏微分が
+  \begin{equation}
+    \frac{\partial g}{\partial \mathbf X} =
+    \begin{bmatrix}
+      \displaystyle
+      \frac{\partial g}{\partial x_{11}}&\cdots&\displaystyle \frac{\partial g}{\partial x_{1N}}\\
+      \vdots& &\vdots\\
+      \displaystyle \frac{\partial g}{\partial x_{M1}}&\cdots&\displaystyle \frac{\partial g}{\partial x_{MN}}
+    \end{bmatrix}
+  \end{equation}
+  で定義されるとき，以下の等式を証明せよ．
+  \begin{enumerate}[label=(\roman*)]
+    \item $\frac{\partial}{\partial \mathbf{X}}{\mathrm{tr}}(\mathbf{X})={\mathbf{I}}$
+    \item $\frac{\partial}{\partial \mathbf{X}}{\mathrm{tr}}({\mathbf{A}}{\mathbf{X}})={\mathbf{A}}^{\top}$
+    \item $\frac{\partial}{\partial \mathrm{X}}{\mathrm{tr}}({\mathbf{A}}{\mathbf{X}}^{\top})={\mathbf{A}}$
+    \item $\frac{\partial}{\partial \mathbf{X}}{\mathrm{tr}}({\mathbf{A}}{\mathbf{X}}{\mathbf{B}})={\mathbf{A}}^{\top}{\mathbf{B}}^{\top}$
+  \end{enumerate}
+  ただし，$\mathbf{A}$は各行列積が定義できるサイズとする．
 
-    \vspace{1mm}
-    $f = f_2(\mathrm{W}_2 f_1(\mathrm{W}_1 x + b_1) + b_2)$ とします．
-    \begin{enumerate}[label=(\roman*)]
-      \item $\frac{\partial f}{\partial A_2}, \frac{\partial f}{\partial b_2}$ を計算してください．
-      \item $\frac{\partial f}{\partial A_1}, \frac{\partial f}{\partial b_1}$ を計算してください．
-      \item $\frac{\partial f}{\partial x}$ を計算してください
-    \end{enumerate}
+\subsection{微分の連鎖律}
+  $f = f_2(\mathrm{W}_2 f_1(\mathrm{W}_1 x + b_1) + b_2)$ とします．
+  \begin{enumerate}[label=(\roman*)]
+    \item $\frac{\partial f}{\partial A_2}, \frac{\partial f}{\partial b_2}$ を計算してください．
+    \item $\frac{\partial f}{\partial A_1}, \frac{\partial f}{\partial b_1}$ を計算してください．
+    \item $\frac{\partial f}{\partial x}$ を計算してください
+  \end{enumerate}
 
-\end{enumerate}
+\subsection{最急降下法}
+  $x \in \numset{R}$とし，関数$f(x) = \frac{1}{6}x^6 - \frac{3}{5}x^5 - x^4 + 4x^3$を，
+  最急降下法を用いて最小化することを考える．
+  最急降下法を用いたパラメータの更新式は，$x_n = x_{n-1} - \alpha f'(x_{n-1})$である．
+  以下の問いに答えよ．
+  ただし，解答にはプログラムを用いてよい（プログラムも提出すること）．
+  \begin{enumerate}[label=(\roman*)]
+    \item $x_0 = \frac{1}{2}, \alpha = 0.2$として，$f(x)$を最小化せよ．
+    \item $x_0 = 4, \alpha = 0.002$として，$f(x)$を最小化せよ．
+    \item $x_0 = -3, \alpha = 0.01$として，$f(x)$を最小化せよ．
+    \item $x_0 = -3, \alpha = 0.02$として，$f(x)$を最小化せよ．
+    \item $f(x)$の増減を手計算で調べ，上記の結果を考察せよ．
+  \end{enumerate}

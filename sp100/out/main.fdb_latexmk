@@ -1,10 +1,10 @@
 # Fdb version 3
-["dvipdf"] 0 "out/main.dvi" "out/main.pdf" "out/main" 0
-  "out/main.dvi" 0 -1 0 "latex"
+["dvipdf"] 1618559985 "out/main.dvi" "out/main.pdf" "out/main" 1618559986
+  "out/main.dvi" 1618559985 56848 738880018e22ba2fe8d93ab8a0d5be1a "latex"
   (generated)
   "out/main.pdf"
-["latex"] 1618478822 "c:/Users/popura/math-training/sp100/main.tex" "out/main.dvi" "main" 1618478822
-  "c:/Users/popura/math-training/sp100/main.tex" 1618475113 1083 7938ab58d606ef62055243c3416b57c5 ""
+["latex"] 1618559984 "c:/Users/popura/math-training/sp100/main.tex" "out/main.dvi" "main" 1618559986
+  "c:/Users/popura/math-training/sp100/main.tex" 1618556308 1589 57d765c75ec4c916a35b98911138f2d7 ""
   "c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1606795815 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1606795457 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1606797793 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -30,6 +30,7 @@
   "c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm" 1606794908 1524 554068197b70979a55370e6c6495f441 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1606794908 1288 655e228510b4c2a1abe905c368440826 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1606794908 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1606794908 1316 b636689f1933f24d1294acdf6041daaa ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss12.tfm" 1606794908 1324 37b971caf729d7edd9cbb9f9b0ea76eb ""
   "c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1606791288 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
   "c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd" 1606791288 961 6518c6525a34feb5e8250ffa91731cff ""
@@ -57,10 +58,20 @@
   "c:/texlive/2020/texmf-var/web2c/eptex/platex.fmt" 1606799228 2606695 a673981aedd792c5bfc62b113ac4c661 ""
   "c:/texlive/2020/texmf.cnf" 1606799066 713 e69b156964470283e0530f5060668171 ""
   "chapter01/unix.tex" 1618295555 35 4be0ed197abac2886d455e86cfd2107d ""
-  "chapter02/linalg.tex" 1618478819 12198 7cca4c8855ff5aa9497cb43c5fdc09eb ""
-  "main.tex" 1618475113 1083 7938ab58d606ef62055243c3416b57c5 ""
-  "out/main.aux" 1618478822 9 a94a2480d3289e625eea47cd1b285758 "latex"
+  "chapter02/linalg.tex" 1618555209 17040 be351c7656883c5f7a1ba542c252c27c ""
+  "chapter03/calculus.tex" 1618554985 4173 b75cd33be741a6f25ed769f5be03db3f ""
+  "chapter04/statistics.tex" 1618552654 694 b04a1be21f129d1be60e934dc53f7cf9 ""
+  "chapter05/signal.tex" 1618559435 132 6125c3287b792dc37cd6da997e2d2826 ""
+  "chapter06/fourier.tex" 1618559755 144 8de4cd89c0f8860e79aba84e6102238a ""
+  "chapter07/lti_system.tex" 1618559981 2008 2f38c3710dcedfee700f1c57f65291bd ""
+  "chapter08/multirate.tex" 1618557676 382 a1ba0487532e8685800ac65cdaf53b23 ""
+  "chapter09/acoustic_signal.tex" 1618557776 56 fa2106b0c9b73327f731ed1ac16474b5 ""
+  "chapter10/image_signal.tex" 1618557787 62 cfa26d5afc68719fa0cbc49bf16ed095 ""
+  "main.tex" 1618556308 1589 57d765c75ec4c916a35b98911138f2d7 ""
+  "out/main.aux" 1618559985 6988 09216c56e90500d568fa78e430cb6594 "latex"
+  "out/main.toc" 1618559985 4389 b39b9a93541c3f9608ff7cee453d735d "latex"
   (generated)
-  "out/main.dvi"
-  "out/main.aux"
   "out/main.log"
+  "out/main.toc"
+  "out/main.aux"
+  "out/main.dvi"

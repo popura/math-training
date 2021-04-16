@@ -1,9 +1,6 @@
-\section{線形代数の基礎}
+\section{線形代数の基礎 \label{sec:linalg}}
 
-\begin{enumerate}[label=問\arabic*.]
-  \vspace{2mm}
-  %
-  \item 連立方程式 \label{linalg:linear_system}
+\subsection{連立方程式 \label{linalg:linear_system}}
 
   \vspace{1mm}
   \begin{enumerate}[label=(\roman*)]
@@ -71,10 +68,8 @@
         $\matsym{A} \vecsym{x} - \vecsym{b} = \vecsym{0}$の解$\vecsym{x}$のうち，$\|\vecsym{x}\|$が最小となるものを求めよ．
     \end{itemize}
   \end{enumerate}
-  %
-  \item 線形変換
 
-  \vspace{1mm}
+\subsection{線形変換}
   $\vecsym{x}$，$\vecsym{y}$を互いに線形独立な縦ベクトルとする．
   いま$\vecsym{y}$を，
   \begin{equation}
@@ -88,10 +83,8 @@
     \item $\vecsym{y}$から$a \vecsym{x}$を得る演算は，ある行列$\matsym{A}$を用いて，
       $\matsym{A}\vecsym{y} = a \vecsym{x}$とかくことができる．$\matsym{A}$を求めよ．
   \end{enumerate}
-  %
-  \item 行列のランク
 
-  \vspace{1mm}
+\subsection{行列のランク}
   2つの行列$\matsym{A}$，$\matsym{B}$の積として，
   $\matsym{C}=\matsym{A}\matsym{B}$で表される行列$\matsym{C}$のランクについて考える．
   ただし，行列$\matsym{C}$のサイズは$5\times 4$である．
@@ -113,10 +106,76 @@
       ただし，$N\in \numset{N}$で，$\matsym{A}$，$\matsym{B}$はフルランクの行列であるとします．
       必要であれば、$N$で場合分けしてください．
   \end{enumerate}
-  %
-  \item 逆行列，固有値分解
 
-  \vspace{1mm}
+\subsection{固有値，固有ベクトル}
+    4次元ベクトル $\vecsym{x} = \begin{pmatrix} a \\ b \\ c \\ d \end{pmatrix}$ に対し，
+    要素を巡回的にシフトした $\vecsym{y} = \begin{pmatrix} b \\ c \\ d \\ a \end{pmatrix}$を考えます．
+    \begin{enumerate}[label=(\roman*)]
+      \item $\vecsym{y} = \matsym{P}\vecsym{x}$ となるような，4x4の行列 $\matsym{P}$ を求めてください．
+      \item $\matsym{P}v = \lambda \vecsym{v}$ ($\lambda$はスカラー) となるようなベクトル $\vecsym{v}$，
+        すなわち，$\matsym{P}$ の固有ベクトルをすべて求めてください．
+    \end{enumerate}
+
+\subsection{行列式と逆行列の存在条件}
+    $i, j \in \numset{N}, a_{ij} \in \numset{C}$ のとき，
+    行列
+    \begin{equation}
+      \matsym{A}=
+        \begin{pmatrix}
+          a_{11} & a_{12} & \cdots & a_{1n} \\
+          a_{21} & a_{22} & \cdots & a_{2n} \\
+          \vdots & \vdots & & \vdots \\
+          a_{n1} & a_{n2} & \cdots & a_{nn}
+        \end{pmatrix}
+    \end{equation}
+    の行列式を
+    \begin{equation}
+      \det{(\matsym{A})} =
+        \begin{vmatrix}
+          a_{11} & a_{12} & \cdots & a_{1n} \\
+          a_{21} & a_{22} & \cdots & a_{2n} \\
+          \vdots & \vdots & & \vdots \\
+          a_{n1} & a_{n2} & \cdots & a_{nn}
+        \end{vmatrix}
+    \end{equation}
+    と表す．
+    ここで，
+    $i \in \numset{N}$とし，$x_i \in \numset{C}$の冪からなる行列
+    \begin{equation}
+      \matsym{V} =
+        \begin{pmatrix}
+          1 & 1 & 1 & 1 \\
+          x_1 & x_2 & x_3 & x_4 \\
+          x_1^2 & x_2^2 & x_3^2 & x_4^2 \\
+          x_1^3 & x_2^3 & x_3^3 & x_4^3
+        \end{pmatrix}
+    \end{equation}
+    を考える．
+    \begin{enumerate}[label=(\roman*)]
+      \item $\det{(\matsym{V})}$を計算せよ．
+      \item $\matsym{V}$の逆行列，
+        すなわち，$\matsym{V}\matsym{V}^{-1}=\matsym{V}^{-1}\matsym{V}=\matsym{I}$が
+        存在するための条件を示してください．
+    \end{enumerate}
+
+\subsection{逆行列}
+    \begin{equation}
+      \matsym{H} =
+        \begin{pmatrix}
+                     1 & \frac{1}{2} & \frac{1}{3} \\[1.5ex]
+           \frac{1}{2} & \frac{1}{3} & \frac{1}{4} \\[1.5ex]
+           \frac{1}{3} & \frac{1}{4} & \frac{1}{5}
+        \end{pmatrix}
+    \end{equation}
+    とする．
+    \begin{enumerate}[label=(\roman*)]
+      \item $\matsym{H}$の逆行列$\matsym{H}^{-1}$をコンピュータで
+        （MATLABならinv(), Pythonならnumpy.linalg.inv()等の関数を用いて）計算せよ．
+        
+      \item $\matsym{H}$の逆行列$\matsym{H}^{-1}$を手計算せよ．
+    \end{enumerate}
+
+\subsection{逆行列，固有値分解}
   ベクトル$\vecsym{x} \in \numset{R}^2$を原点中心に$\theta$だけ（反時計回りに）回転させたベクトル$\vecsym{y}$は，
   行列$\matsym{R}_\theta$を用いて$\vecsym{y} = \matsym{R}_\theta \vecsym{x}$と与えられる．
   \begin{enumerate}[label=(\roman*)]
@@ -127,9 +186,7 @@
       $\matsym{R}_\theta = \matsym{U}\matsym{\Lambda} \matsym{U}^{-1}$の形で$\matsym{R}_\theta$を表せ．
   \end{enumerate}
 
-  \item エルミート行列の性質
-
-  \vspace{1mm}
+\subsection{エルミート行列の性質}
   エルミート行列$\matsym{A}$の固有値分解$\matsym{A} = \matsym{U}\matsym{\Lambda}\matsym{U}^{-1}$を考える．
   \begin{enumerate}[label=(\roman*)]
     % \item エルミート行列$\matsym{A}$の異なる固有値に対応する固有ベクトルが，任意の内積について直交することを示せ．
@@ -143,9 +200,7 @@
       $\matsym{A}^{-1} = \matsym{U}\matsym{\Lambda}^{-1}\htp{\matsym{U}}$として与えられることを示せ．
   \end{enumerate}
 
-  \item 特異値分解 \label{linalg:svd}
-
-  \vspace{1mm}
+\subsection{特異値分解 \label{linalg:svd}}
   行列$\matsym{A}$は，各行が直交する行列$\matsym{U}, \matsym{V}$，
   および対角行列$\matsym{\Sigma}$を用いて
   $\matsym{A}=\matsym{U}\matsym{\Sigma}\htp{\matsym{V}}$の形に分解できる．
@@ -174,9 +229,7 @@
       ただし，この特異値分解に限り，プログラム等を用いて解答してもよい．
   \end{enumerate}
 
-  \item Moore-Penroseの擬似逆行列
-
-  \vspace{1mm}
+\subsection{Moore-Penroseの擬似逆行列}
   行列$\matsym{A}$について，以下の4条件
   \begin{itemize}
     \item $\matsym{A}\pinv{\matsym{A}}\matsym{A}=\matsym{A},$
@@ -221,38 +274,84 @@
       ただし，この計算に限り，プログラム等を利用して解答してもよい．
   \end{enumerate}
 
-  \item 逆行列
-
-    \begin{equation}
-      \matsym{H} =
-        \begin{pmatrix}
-                     1 & \frac{1}{2} & \frac{1}{3} \\
-           \frac{1}{2} & \frac{1}{3} & \frac{1}{4} \\
-           \frac{1}{3} & \frac{1}{4} & \frac{1}{5}
-        \end{pmatrix}
-    \end{equation}
-    とする．
-    \begin{enumerate}{label=(\roman*)}
-      \item $\matsym{H}$の逆行列$\matsym{H}^{-1}$をコンピュータで計算せよ．
-      \item $\matsym{H}$の逆行列$\matsym{H}^{-1}$を手計算せよ．
+\subsection{トレース}
+    $i$行$j$列要素が$a_{ij}$である$n$次正方行列$\matsym{A}=(a_{ij})$の
+    トレース$\trace(\matsym{A})$（跡，対角和）を
+    $\trace(\matsym{A}) = \sum_i^n a_{ii}$
+    と定義する．
+    \begin{enumerate}[label=(\roman*)]
+      \item $n$次正方行列$\matsym{A}$と，それに相似な行列
+        $\matsym{D} = \matsym{P}^{-1}\matsym{A}\matsym{P}$
+        （ただし，$\matsym{P}$は$n$次正則行列）について，
+        $\trace(\matsym{A}) = \trace(\matsym{D})$が成り立つことを証明せよ．
+      \item $n$次正方行列${\boldsymbol A}$の固有値を$\lambda_i\ (i=1,\ldots,n)$とすると，
+        $\trace(\matsym{A}) = \sum_i \lambda_i$が成り立つことを証明せよ．
+      \item $n$次正方行列$\matsym{A}$，$\matsym{B}$に対し，
+        $\trace(\matsym{A}\matsym{B}) = \trace(\matsym{B}\matsym{A})$が成り立つことを証明せよ．
     \end{enumerate}
 
-  \item 行列式と逆行列の存在条件
+\subsection{離散畳み込みとDFT}
+  離散領域での畳み込みの式$y_n=\sum^{K-1}_{k=0}a_kx_{n-k}$
+  の行列表現について以下の問いに答えよ．ただし，以後は$K=4$であり，
+  \begin{equation}
+    \vecsym{x} = \begin{pmatrix}x_1\\x_2\\x_3\\x_4\end{pmatrix},
+    \vecsym{y} = \begin{pmatrix}y_1\\y_2\\y_3\\y_4\end{pmatrix}
+  \end{equation}
+  とする．
+  \begin{enumerate}[label=(\roman*)]
+    \item $x_n=0,(n \le 1)$であるとき，
+      $\vecsym{y}=\matsym{L}\vecsym{x}$となるような$4\times4$の行列$\matsym{L}$を，$a_k (k=0,1,2,3)$を用いて表せ．
+    \item 任意の$n$に対して$x_n=x_{n+4}$であるとき，
+      $\vecsym{y}=\matsym{C}\vecsym{x}$となるような$4\times4$の行列$\matsym{C}$を，
+      $a_k (k=0,1,2,3)$を用いて表せ．
+    \item 行列$\matsym{F}$を以下のように定義する．ただし，$j$は虚数単位を表す．
+      \begin{equation}
+        \matsym{F} =
+          \begin{bmatrix}
+            1 &  1 &  1&  1\\
+            1 &  j & -1& -j\\
+            1 & -1 &  1& -1\\
+            1 & -j & -1&  j
+          \end{bmatrix}.
+      \end{equation}
+      このとき$a_k,(k=0,1,2,3)$によらず，
+      $\matsym{F}\matsym{C}\matsym{F}^{-1}$が対角行列になることを示せ．
+      ただし，$\matsym{F}^{-1}=\frac{1}{4}\htp{\matsym{F}}$であることを用いてよい．
+      ここで，$\htp{}$はエルミート転置を表す．
 
-    $i, j \in \mathbb{N}, a_{ij} \in \mathbb{C}$ のとき，
-    行列 $\mathrm{A}= \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{pmatrix} $
-    の行列式を$\det{(\mathrm{A})} = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix}$ と表します．
-    - $$i \in \mathbb{N}, x_i \in \mathbb{C}, \mathrm{V}= \left( \begin{array}{rrrr} 1 & 1 & 1 & 1 \\ x_1 & x_2 & x_3 & x_4 \\ x_1^2 & x_2^2 & x_3^2 & x_4^2 \\ x_1^3 & x_2^3 & x_3^3 & x_4^3 \end{array} \right)$$ のとき，
-        $$\det{(\mathrm{V})}$$を計算してください．
-    - $$\mathrm{V}$$の逆行列が存在するための条件を示してください．
+      補足：計算が大変であれば，適当な$a_k$を自分で定め，
+      その場合について示すのでも可とする．
+      ただし，全部$0$，$1$のような簡単すぎるものは不可とする．
+      せめてどれも$0$でない値を選ぶこと．
+    \item $\vecsym{X}=\matsym{F}\vecsym{x}$，$\vecsym{Y}=\matsym{F}\vecsym{y}$を定義すると，
+      (ii)のように$\vecsym{y}=\matsym{C}\vecsym{x}$であるとき，
+      $\matsym{Y}$を$\matsym{X}$，$\matsym{F}$，$\matsym{C}$で表せ．
+      $\matsym{Y}$の第$n$成分$Y_n$は，$\matsym{X}$の第$n$成分$X_n$を用いて$Y_n=D_nX_n$，
+      と表すことができることを示せ．また，$D_1,D_2,D_3,D_4$を求めよ．
 
-  \item 対角行列，三角行列の行列式
+      補足：(iii)のように適当な$X_k$，$Y_k$を自身で定めることも可とする．
+    \end{enumerate}
 
-    対角行列，上三角行列，下三角行列の行列式を計算してください．
+\subsection{深層学習？}
+    $k \in \numset{N}$層の全結合ニューラルネットワーク$f$は，
+    \begin{equation}
+    f(\vecsym{x}) =
+      f_k(\matsym{W}_k
+        f_{k-1}(\matsym{W}_{k-1}
+          f_{k-2}(\cdots \matsym{W}_2
+            f_1(\matsym{W}_1
+              \vecsym{x} + \vecsym{b}_1)
+            + \vecsym{b}_2) \cdots)
+          + \vecsym{b}_{k-1})
+        + \vecsym{b}_k)
+    \end{equation}
+    として与えられる．
+    ここで，$\matsym{W}_n (1 \le n \le k)$は実行列，
+    $\vecsym{b}_n, \vecsym{x}$はそれぞれ実列ベクトルとし，
+    積や和が定義できるサイズを持つものとする．
+    また，$f_n(\vecsym{x})$は，
+    与えられたベクトルと同じ次元を持つベクトルを返す微分可能な関数である．
 
-  \item 固有値，固有ベクトル
-    ４次元ベクトル $$x = \left( \begin{array}{r} a \\ b \\ c \\ d \end{array} \right)$$ に対し，要素を巡回的にシフトした $$y = \left( \begin{array}{r} b \\ c \\ d \\ a \end{array} \right)$$を考えます．
-    - $$y = \mathrm{P}x$$ となるような，4x4の行列 $$\mathrm{P}$$ を求めてください．
-    - $$\mathrm{P}v = \lambda v$$ ($$\lambda$$はスカラー) となるようなベクトル $$v$$，すなわち，$$\mathrm{P}$$ の固有ベクトルをすべて求めてください．
-  
-\end{enumerate}
+    関数$f_n(\vecsym{x})$が$f_n(\vecsym{x}) = \vecsym{x}$として与えられるとき，
+    $k$層のニューラルネットワークと等価な$1$層のニューラルネットワークが存在することを示せ
+
