@@ -1,10 +1,6 @@
 \section{線形代数の基礎}
 
-\begin{enumerate}[label=問\arabic*.]
-  \vspace{2mm}
-  %
-  \item 連立方程式
-
+\subsection{連立方程式}
   \vspace{1mm}
   \begin{enumerate}[label=(\roman*)]
     \item
@@ -143,157 +139,74 @@
       \end{enumerate}
     \end{itemize}
   \end{enumerate}
-  %
-  \item 線形変換
 
+\subsection{線形変換}
   \vspace{1mm}
-  ${\boldsymbol x}$，${\boldsymbol y}$を互いに線形独立な縦ベクトルとする．
-  いま${\boldsymbol y}$を，
-  \begin{equation}
-    {\boldsymbol y}=a{\boldsymbol x}+{\boldsymbol x}_{\perp}
-  \end{equation}
-  のように表したい．
-  ここで，$a$はスカラー，${\boldsymbol x}_{\perp}$は${\boldsymbol x}$と直交するベクトルを表す．
-  すなわち，${\boldsymbol x}^{\rm T}{\boldsymbol x}_{\perp}=0$である．
   \begin{enumerate}[label=(\roman*)]
-    \item $a$を求めよ．
-    \item ${\boldsymbol y}$から$a{\boldsymbol x}$を得る演算は，ある行列${\boldsymbol A}$を用いて，
-      ${\boldsymbol A}{\boldsymbol y}=a{\boldsymbol x}$とかくことができる．${\boldsymbol A}$を求めよ．
-  \end{enumerate}
-  %
-  \item 行列のランク
-
-  \vspace{1mm}
-  2つの行列$\boldsymbol{A}$，$\boldsymbol{B}$の積として，
-  $\boldsymbol{C}=\boldsymbol{A}\boldsymbol{B}$で表される行列$\boldsymbol{C}$のランクについて考える．
-  ただし，行列$\boldsymbol{C}$のサイズは$5\times 4$である．
-
-  \begin{enumerate}[label=(\roman*)]
-    \item 行列$\boldsymbol{A}$，$\boldsymbol{B}$として，
-      それぞれ$5\times 1$，$1\times 4$の適当な行列を自分で考え，$\boldsymbol{C}$を計算しなさい．
-      ただし，$\boldsymbol{A}$，$\boldsymbol{B}$は零行列（すべての要素が0の行列）ではないものとします．
-    \item (i)のとき、行列$\boldsymbol{C}$のランクを求めなさい．
-      理由をつけて答えても，1)の答えを階段化するなどして答えても結構です．
-    \item 行列$\boldsymbol{A}$，$\boldsymbol{B}$として，
-      それぞれ$5\times 2$，$2\times 4$の適当な行列を自分で考え，$\boldsymbol{C}$を計算しなさい．
-      ただし，$\boldsymbol{A}$，$\boldsymbol{B}$はフルランクの行列（$m\times n$行列のランクが$m$と$n$の小さいほうに等しいとき，この行列をフルランクであるという）であるものとします．
-    \item (iii)のとき、行列$\boldsymbol{C}$のランクを求めなさい．
-      理由をつけて答えても，3)の答えを階段化するなどして答えても結構です．
-    \item 行列$\boldsymbol{A}$，$\boldsymbol{B}$が，
-      それぞれ$5\times N$，$N\times 4$のサイズであったとき，
-      行列$\boldsymbol{C}$のランクがいくつになるか答えなさい．証明なしでも結構です．
-      ただし，$N\in \mathbb{N}$で，$\boldsymbol{A}$，$\boldsymbol{B}$はフルランクの行列であるとします．
-      必要であれば、$N$で場合分けしてください．
-  \end{enumerate}
-  %
-  \item 逆行列，固有値分解
-
-  \vspace{1mm}
-  ベクトル$x \in \mathbb{R}^2$を原点中心に$\theta$だけ（反時計回りに）回転させたベクトル$y$は，
-  行列$\mathbf{R}_\theta$を用いて$y = \mathbf{R}_\theta x$と与えられる．
-  \begin{enumerate}[label=(\roman*)]
-    \item $\mathbf{R}_\theta$を求めよ．
-    \item $\mathbf{R}_\theta$の逆行列を求めよ．
-    \item $\mathbf{R}_\theta$の固有値，固有ベクトルを求めよ．
-    \item 正則行列$\mathbf{U}$および対角行列$\mathbf{\Lambda}$を用いて，
-      $\mathbf{R}_\theta = \mathbf{U}\mathbf{\Lambda} \mathbf{U}^{-1}$の形で$\mathbf{R}_\theta$を表せ．
+    \item $\vecsym{y} = a \vecsym{x} + \vecsym{x}_\perp$より，
+      $\vecsym{x}^\top \vecsym{y} = \vecsym{x}^\top (a \vecsym{x} + \vecsym{x}_\perp) = a \| \vecsym{x} \|^2$．
+      $a$について整理すると，
+      \begin{equation}
+        a = \frac{1}{\| \vecsym{x} \|^2} \vecsym{x}^\top \vecsym{y}
+      \end{equation}
+      を得る．
+    \item $\matsym{A} \vecsym{y} = a \vecsym{x}$に(i)の結果を代入することで，
+      \begin{equation}
+        \matsym{A} = \frac{1}{\| \vecsym{x} \|^2} \vecsym{x} \vecsym{x}^\top
+      \end{equation}
+      を得る．
   \end{enumerate}
 
-  \item エルミート行列の性質
-
+\subsection{行列式と逆行列の存在条件}
   \vspace{1mm}
-  エルミート行列$\mathrm{A}$の固有値分解$\mathrm{A} = \mathrm{U}\mathrm{\Lambda}\mathrm{U}^{-1}$を考える．
-  \begin{enumerate}[label=(\roman*)]
-    % \item エルミート行列$\mathrm{A}$の異なる固有値に対応する固有ベクトルが，任意の内積について直交することを示せ．
-    \item 任意の複素ベクトル$\bm{v}=(v_1, \cdots, v_n)^{\top}$のとき，
-      $\bm{v}^{\rm H}\bm{v}\geq0$を証明せよ．
-    \item もしくはエルミート行列の固有値$\lambda$が実数になることを証明せよ．
-    \item エルミート行列$\mathrm{A}$の固有値分解が
-      $\mathrm{A} = \mathrm{U}\mathrm{\Lambda}\mathrm{U}^{\dagger}$ として与えられることを示せ．
-      ここで， $\cdot^\dagger$ はエルミート転置を表す．
-    \item フルランクを持つエルミート行列$\mathrm{A}$の逆行列$\mathrm{A}^{-1}$が，
-      $\mathrm{A}^{-1} = \mathrm{U}\mathrm{\Lambda}^{-1}\mathrm{U}^{\dagger}$として与えられることを示せ．
-  \end{enumerate}
-
-  \item 特異値分解
-
-  \vspace{1mm}
-  行列$\mathrm{A}$は，各行が直交する行列$\mathrm{U}, \mathrm{V}$，
-  および対角行列$\mathrm{\Sigma}$を用いて
-  $\mathrm{A}=\mathrm{U}\mathrm{\Sigma}\mathrm{V}^*$の形に分解できる．
-  これを特異値分解と呼ぶ．ここで，$\cdot^{\dagger}$はエルミート転置を表す．
   \begin{enumerate}[label=(\roman*)]
     \item
-      \begin{equation}
-        \mathrm{A} = \left(
-          \begin{array}{rr}
+      \begin{align}
+        \det{(\matsym{V})} &=
+          \begin{vmatrix}
+            1 & 1 & 1 & 1 \\
+            x_1 & x_2 & x_3 & x_4 \\
+            x_1^2 & x_2^2 & x_3^2 & x_4^2 \\
+            x_1^3 & x_2^3 & x_3^3 & x_4^3
+          \end{vmatrix}
+          =
+          \begin{vmatrix}
+            1 & 1 & 1 & 1 \\
+            0 & x_2 - x_1 & x_3 - x_1 & x_4 - x_1 \\
+            0 & x_2 (x_2 - x_1) & x_3 (x_3 - x_1) & x_4 (x_4 - x_1)\\
+            0 & x_2^2 (x_2 - x_1) & x_3^2 (x_3 - x_1) & x_4^2 (x_4 - x_1) 
+          \end{vmatrix}\\
+          &=
+          \begin{vmatrix}
+            x_2 - x_1 & x_3 - x_1 & x_4 - x_1 \\
+            x_2 (x_2 - x_1) & x_3 (x_3 - x_1) & x_4 (x_4 - x_1)\\
+            x_2^2 (x_2 - x_1) & x_3^2 (x_3 - x_1) & x_4^2 (x_4 - x_1) 
+          \end{vmatrix}\\
+          &= (x_2 - x_1) (x_3 - x_1) (x_4 - x_1)
+          \begin{vmatrix}
+            1 & 1 & 1 \\
+            x_2 & x_3 & x_4\\
+            x_2^2 & x_3^2 & x_4^2
+          \end{vmatrix}\\
+          &= (x_2 - x_1) (x_3 - x_1) (x_4 - x_1)
+          \begin{vmatrix}
+            1 & 1 & 1 \\
+            0 & x_3 - x_2 & x_4 - x_2\\
+            0 & x_3 (x_3 - x_2) & x_4 (x_3 - x_2)
+          \end{vmatrix}\\
+          &= (x_2 - x_1) (x_3 - x_1) (x_4 - x_1) (x_3 - x_2) (x_4 - x_2)
+          \begin{vmatrix}
             1 & 1 \\
-            1 & -1 \\
-            0 & 1
-          \end{array}
-          \right)
-      \end{equation}
-      の特異値分解を求めよ．
-    \item
+            x_3 & x_4
+          \end{vmatrix}\\
+          &= (x_2 - x_1) (x_3 - x_1) (x_4 - x_1) (x_3 - x_2) (x_4 - x_2) (x_4 - x_3)
+      \end{align}
+    \item 行列$\matsym{V}$が逆行列を持つための必要十分条件は，$\det{(\matsym{V})} \neq 0$であることである．
       \begin{equation}
-        \mathrm{A} = \left(
-          \begin{array}{rrrr}
-            2 & 4 & 1 &-1 \\
-            1 & 2 & -1 & 1 \\
-            2 & 1 & 1 & 2 \\
-            1 & 3 & 2 & -3
-          \end{array}
-          \right)
-      \end{equation}の特異値分解を求めよ．
-      ただし，この特異値分解に限り，プログラム等を用いて解答してもよい．
+        \det{(\matsym{V})} = (x_2 - x_1) (x_3 - x_1) (x_4 - x_1) (x_3 - x_2) (x_4 - x_2) (x_4 - x_3) \neq 0
+      \end{equation}
+      より，
+      $i, j \in \{1, 2, 3, 4\}$かつ$i \neq j$であるすべての$(i, j)$について$x_i \neq x_j$を満たすとき，
+      行列$\matsym{V}$は逆行列を持つ．
+      
   \end{enumerate}
-
-  \item Moore-Penroseの擬似逆行列
-
-  \vspace{1mm}
-  行列$\mathrm{A}$について，以下の4条件
-  \begin{itemize}
-    \item $\mathrm{A}\mathrm{A}^{\dagger}\mathrm{A}=\mathrm{A},$
-    \item $\mathrm{A}^{\dagger}\mathrm{A}\mathrm{A}^{\dagger}=\mathrm{A}^{\dagger},$
-    \item $(\mathrm{A}\mathrm{A}^{\dagger})^*=\mathrm{A}\mathrm{A}^{\dagger},$
-    \item $(\mathrm{A}^{\dagger}\mathrm{A})^*=\mathrm{A}^{\dagger}\mathrm{A}$
-  \end{itemize}
-  を満たす行列$\mathrm{A}^{\dagger}$をMoore-Penroseの擬似逆行列と呼ぶ．
-  ここで，$\mathrm{A}$が正則行列ならば，$\mathrm{A}^{\dagger}=\mathrm{A}^{-1}$を満たす．
-  また，$\mathrm{A}$の特異値分解が
-  $\mathrm{A}=\mathrm{U}\mathrm{\Sigma}\mathrm{V}^*$として与えられるとき，
-  $\mathrm{A}^{\dagger}=\mathrm{V}\mathrm{\Sigma}^{\dagger}\mathrm{U}^*$が成り立つ．
-  第17問の結果を用いて以下の問いに答えよ．
-  \begin{enumerate}[label=(\roman*)]
-    \item
-      \begin{equation}
-        \mathrm{A} = \left(
-          \begin{array}{rr}
-            1 & 1 \\
-            1 & -1 \\
-            0 & 1
-          \end{array}
-          \right)
-      \end{equation}
-      について，$\mathrm{A}^{\dagger}$を求めよ．
-      また，$b=\left( \begin{array}{r} 1 \\ 1 \\ 2 \end{array} \right)$のとき，
-      $\mathrm{A}^{\dagger} b$を計算し，
-      その結果を第3問で計算した$x$と比較せよ．
-    \item
-      \begin{equation}
-        \mathrm{A} = \left(
-          \begin{array}{rrrr}
-            2 & 4 & 1 & -1 \\
-            1 & 2 & -1 & 1 \\
-            2 & 1 & 1 & 2 \\
-            1 & 3 & 2 & -3
-          \end{array}
-          \right)
-      \end{equation}
-      について，$\mathrm{A}^{\dagger}$を求めよ．
-      また，$b=\left( \begin{array}{r} 1 \\ 2 \\ -2 \\ 0 \end{array} \right)$のとき，
-      $\mathrm{A}^{\dagger} b$を計算し，その結果を第6問で計算した$x$と比較せよ．
-      ただし，この計算に限り，プログラム等を利用して解答してもよい．
-  \end{enumerate}
-  
-\end{enumerate}

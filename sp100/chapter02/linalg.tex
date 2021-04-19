@@ -124,23 +124,23 @@
         \begin{pmatrix}
           a_{11} & a_{12} & \cdots & a_{1n} \\
           a_{21} & a_{22} & \cdots & a_{2n} \\
-          \vdots & \vdots & & \vdots \\
+          \vdots & \vdots & \ddots & \vdots \\
           a_{n1} & a_{n2} & \cdots & a_{nn}
         \end{pmatrix}
     \end{equation}
-    の行列式を
-    \begin{equation}
-      \det{(\matsym{A})} =
-        \begin{vmatrix}
-          a_{11} & a_{12} & \cdots & a_{1n} \\
-          a_{21} & a_{22} & \cdots & a_{2n} \\
-          \vdots & \vdots & & \vdots \\
-          a_{n1} & a_{n2} & \cdots & a_{nn}
-        \end{vmatrix}
-    \end{equation}
-    と表す．
+    の行列式を$\det{(\matsym{A})}$と表す．
+    %\begin{equation}
+    %  \det{(\matsym{A})} =
+    %    \begin{vmatrix}
+    %      a_{11} & a_{12} & \cdots & a_{1n} \\
+    %      a_{21} & a_{22} & \cdots & a_{2n} \\
+    %      \vdots & \vdots & & \vdots \\
+    %      a_{n1} & a_{n2} & \cdots & a_{nn}
+    %    \end{vmatrix}
+    %\end{equation}
+    %と表す．
     ここで，
-    $i \in \numset{N}$とし，$x_i \in \numset{C}$の冪からなる行列
+    $i \in \numset{N}$とし，$x_i \in \numset{R}$の冪からなる行列
     \begin{equation}
       \matsym{V} =
         \begin{pmatrix}
@@ -154,8 +154,8 @@
     \begin{enumerate}[label=(\roman*)]
       \item $\det{(\matsym{V})}$を計算せよ．
       \item $\matsym{V}$の逆行列，
-        すなわち，$\matsym{V}\matsym{V}^{-1}=\matsym{V}^{-1}\matsym{V}=\matsym{I}$が
-        存在するための条件を示してください．
+        すなわち，$\matsym{V}\matsym{V}^{-1}=\matsym{V}^{-1}\matsym{V}=\matsym{I}$
+        （$\matsym{I}$は単位行列）を満たす行列$\matsym{V}^{-1}$が存在するための条件を示せ．
     \end{enumerate}
 
 \subsection{逆行列}

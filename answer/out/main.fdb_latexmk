@@ -1,10 +1,10 @@
 # Fdb version 3
-["dvipdf"] 1618458662 "out/main.dvi" "out/main.pdf" "out/main" 1618458664
-  "out/main.dvi" 1618458662 14108 24956bc6c77fb60b6a4d47787499f181 "latex"
+["dvipdf"] 1618821600 "out/main.dvi" "out/main.pdf" "out/main" 1618821601
+  "out/main.dvi" 1618821600 11028 bd07db8fb331b5e35065645abb73e088 "latex"
   (generated)
   "out/main.pdf"
-["latex"] 1618458661 "c:/Users/popura/math-training/answer/main.tex" "out/main.dvi" "main" 1618458664
-  "c:/Users/popura/math-training/answer/main.tex" 1618452180 882 fdc3746c7d08322c4baf89a5ce88c017 ""
+["latex"] 1618821599 "c:/Users/popura/math-training/answer/main.tex" "out/main.dvi" "main" 1618821601
+  "c:/Users/popura/math-training/answer/main.tex" 1618819504 1196 84bae195de60cce97736b51b12e86eb8 ""
   "c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1606795815 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1606795457 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1606797793 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -56,10 +56,10 @@
   "c:/texlive/2020/texmf-dist/web2c/texmf.cnf" 1606796433 39451 15a3ebee027466ecb89701aa91dfebaf ""
   "c:/texlive/2020/texmf-var/web2c/eptex/platex.fmt" 1606799228 2606695 a673981aedd792c5bfc62b113ac4c661 ""
   "c:/texlive/2020/texmf.cnf" 1606799066 713 e69b156964470283e0530f5060668171 ""
-  "chapter02/linalg.tex" 1618458659 12861 8ce1f2a6dbd9aa6fc96d698cf858d8f2 ""
-  "main.tex" 1618452180 882 fdc3746c7d08322c4baf89a5ce88c017 ""
-  "out/main.aux" 1618458662 141 f535d7c4482ee7e358d958f13a43ae82 "latex"
+  "chapter02/linalg.tex" 1618821598 7741 2d52112a2f8c2628eff0d2dff00a7875 ""
+  "main.tex" 1618819504 1196 84bae195de60cce97736b51b12e86eb8 ""
+  "out/main.aux" 1618821600 486 d7f8fff9e808f5ea6274dcf508b7c91c "latex"
   (generated)
-  "out/main.aux"
-  "out/main.dvi"
   "out/main.log"
+  "out/main.dvi"
+  "out/main.aux"

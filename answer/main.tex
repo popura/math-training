@@ -12,9 +12,17 @@
 %\usepackage{latexsym}
 %\usepackage{psfrag}
 \usepackage{enumitem}
-\renewcommand\thesubfigure{(\alph{subfigure})}
+\renewcommand{\thesubsection}{問\arabic{subsection}}
+\renewcommand{\thesubfigure}{(\alph{subfigure})}
 
+\newcommand{\vecsym}[1]{\boldsymbol{#1}}
+\newcommand{\matsym}[1]{\mathrm{#1}}
+\newcommand{\tp}[1]{#1^\top}
+\newcommand{\htp}[1]{#1^\mathrm{H}}
+\newcommand{\pinv}[1]{#1^\dagger}
+\newcommand{\numset}[1]{\mathbb{#1}}
 \DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\trace}{trace}
 
 \begin{document}
 

@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1618559985 "out/main.dvi" "out/main.pdf" "out/main" 1618559986
-  "out/main.dvi" 1618559985 56848 738880018e22ba2fe8d93ab8a0d5be1a "latex"
+["dvipdf"] 1618794378 "out/main.dvi" "out/main.pdf" "out/main" 1618794380
+  "out/main.dvi" 1618794378 56384 5fcf13ba4a094a095f9cbd8c49077319 "latex"
   (generated)
   "out/main.pdf"
-["latex"] 1618559984 "c:/Users/popura/math-training/sp100/main.tex" "out/main.dvi" "main" 1618559986
+["latex"] 1618794377 "c:/Users/popura/math-training/sp100/main.tex" "out/main.dvi" "main" 1618794380
   "c:/Users/popura/math-training/sp100/main.tex" 1618556308 1589 57d765c75ec4c916a35b98911138f2d7 ""
   "c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1606795815 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1606795457 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -58,7 +58,7 @@
   "c:/texlive/2020/texmf-var/web2c/eptex/platex.fmt" 1606799228 2606695 a673981aedd792c5bfc62b113ac4c661 ""
   "c:/texlive/2020/texmf.cnf" 1606799066 713 e69b156964470283e0530f5060668171 ""
   "chapter01/unix.tex" 1618295555 35 4be0ed197abac2886d455e86cfd2107d ""
-  "chapter02/linalg.tex" 1618555209 17040 be351c7656883c5f7a1ba542c252c27c ""
+  "chapter02/linalg.tex" 1618794375 17142 2ef79bdbaa452e921bd0dff1bfb1c750 ""
   "chapter03/calculus.tex" 1618554985 4173 b75cd33be741a6f25ed769f5be03db3f ""
   "chapter04/statistics.tex" 1618552654 694 b04a1be21f129d1be60e934dc53f7cf9 ""
   "chapter05/signal.tex" 1618559435 132 6125c3287b792dc37cd6da997e2d2826 ""
@@ -68,10 +68,10 @@
   "chapter09/acoustic_signal.tex" 1618557776 56 fa2106b0c9b73327f731ed1ac16474b5 ""
   "chapter10/image_signal.tex" 1618557787 62 cfa26d5afc68719fa0cbc49bf16ed095 ""
   "main.tex" 1618556308 1589 57d765c75ec4c916a35b98911138f2d7 ""
-  "out/main.aux" 1618559985 6988 09216c56e90500d568fa78e430cb6594 "latex"
-  "out/main.toc" 1618559985 4389 b39b9a93541c3f9608ff7cee453d735d "latex"
+  "out/main.aux" 1618794378 6985 b6b840d509ee7a0d0b6db01feff3720f "latex"
+  "out/main.toc" 1618794378 4386 c0cd8964df7de5aeff05fe274156fe83 "latex"
   (generated)
-  "out/main.log"
-  "out/main.toc"
-  "out/main.aux"
   "out/main.dvi"
+  "out/main.log"
+  "out/main.aux"
+  "out/main.toc"
