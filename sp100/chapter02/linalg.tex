@@ -109,11 +109,11 @@
 
 \subsection{固有値，固有ベクトル}
     4次元ベクトル $\vecsym{x} = \begin{pmatrix} a \\ b \\ c \\ d \end{pmatrix}$ に対し，
-    要素を巡回的にシフトした $\vecsym{y} = \begin{pmatrix} b \\ c \\ d \\ a \end{pmatrix}$を考えます．
+    要素を巡回的にシフトした $\vecsym{y} = \begin{pmatrix} b \\ c \\ d \\ a \end{pmatrix}$を考える．
     \begin{enumerate}[label=(\roman*)]
-      \item $\vecsym{y} = \matsym{P}\vecsym{x}$ となるような，4x4の行列 $\matsym{P}$ を求めてください．
+      \item $\vecsym{y} = \matsym{P}\vecsym{x}$ となるような，4x4の行列 $\matsym{P}$ を求めよ．
       \item $\matsym{P}v = \lambda \vecsym{v}$ ($\lambda$はスカラー) となるようなベクトル $\vecsym{v}$，
-        すなわち，$\matsym{P}$ の固有ベクトルをすべて求めてください．
+        すなわち，$\matsym{P}$ の固有ベクトルをすべて求めよ．
     \end{enumerate}
 
 \subsection{行列式と逆行列の存在条件}
@@ -175,15 +175,20 @@
       \item $\matsym{H}$の逆行列$\matsym{H}^{-1}$を手計算せよ．
     \end{enumerate}
 
-\subsection{逆行列，固有値分解}
-  ベクトル$\vecsym{x} \in \numset{R}^2$を原点中心に$\theta$だけ（反時計回りに）回転させたベクトル$\vecsym{y}$は，
-  行列$\matsym{R}_\theta$を用いて$\vecsym{y} = \matsym{R}_\theta \vecsym{x}$と与えられる．
+\subsection{回転行列}
+  $\vecsym{e}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$,
+  $\vecsym{e}_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$
+  とする．
   \begin{enumerate}[label=(\roman*)]
-    \item $\matsym{R}_\theta$を求めよ．
+    \item $\vecsym{e}_1$, $\vecsym{e}_2$をそれぞれ原点中心に$\theta \mathrm{[rad]}$だけ
+      （反時計回りに）回転させたベクトル$\vecsym{e}'_1, \vecsym{e}'_2$を求めよ．
+    \item ベクトル$\vecsym{v} = \begin{pmatrix} x \\ y \end{pmatrix}$を
+      原点中心に$\theta \mathrm{[rad]}$だけ回転させたベクトル$\vecsym{v}'$は，
+      行列$\matsym{R}_\theta$を用いて$\vecsym{v}' = \matsym{R}_\theta \vecsym{v}$と与えられる．
+      $\matsym{R}_\theta$を求めよ．
+    \item $\vecsym{e}_1$を$\theta \mathrm{[rad]}$だけ回転させた後に，
+      $\phi \mathrm{[rad]}$だけ回転させて得られるベクトル$\vecsym{\nu}$を求めよ．
     \item $\matsym{R}_\theta$の逆行列を求めよ．
-    \item $\matsym{R}_\theta$の固有値，固有ベクトルを求めよ．
-    \item 正則行列$\matsym{U}$および対角行列$\matsym{\Lambda}$を用いて，
-      $\matsym{R}_\theta = \matsym{U}\matsym{\Lambda} \matsym{U}^{-1}$の形で$\matsym{R}_\theta$を表せ．
   \end{enumerate}
 
 \subsection{エルミート行列の性質}
