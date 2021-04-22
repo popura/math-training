@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1618821600 "out/main.dvi" "out/main.pdf" "out/main" 1618821601
-  "out/main.dvi" 1618821600 11028 bd07db8fb331b5e35065645abb73e088 "latex"
+["dvipdf"] 1619056669 "out/main.dvi" "out/main.pdf" "out/main" 1619056670
+  "out/main.dvi" 1619056669 13288 50c891c1ae3695d2dc8ee85d4cc02791 "latex"
   (generated)
   "out/main.pdf"
-["latex"] 1618821599 "c:/Users/popura/math-training/answer/main.tex" "out/main.dvi" "main" 1618821601
+["latex"] 1619056667 "c:/Users/popura/math-training/answer/main.tex" "out/main.dvi" "main" 1619056670
   "c:/Users/popura/math-training/answer/main.tex" 1618819504 1196 84bae195de60cce97736b51b12e86eb8 ""
   "c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1606795815 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1606795457 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -56,9 +56,9 @@
   "c:/texlive/2020/texmf-dist/web2c/texmf.cnf" 1606796433 39451 15a3ebee027466ecb89701aa91dfebaf ""
   "c:/texlive/2020/texmf-var/web2c/eptex/platex.fmt" 1606799228 2606695 a673981aedd792c5bfc62b113ac4c661 ""
   "c:/texlive/2020/texmf.cnf" 1606799066 713 e69b156964470283e0530f5060668171 ""
-  "chapter02/linalg.tex" 1618821598 7741 2d52112a2f8c2628eff0d2dff00a7875 ""
+  "chapter02/linalg.tex" 1619056665 9993 40232a54a39dc38c470ae151bd4b6f32 ""
   "main.tex" 1618819504 1196 84bae195de60cce97736b51b12e86eb8 ""
-  "out/main.aux" 1618821600 486 d7f8fff9e808f5ea6274dcf508b7c91c "latex"
+  "out/main.aux" 1619056669 592 bd3d36b5be686bcf9c3332b9c2e29b47 "latex"
   (generated)
   "out/main.log"
   "out/main.dvi"

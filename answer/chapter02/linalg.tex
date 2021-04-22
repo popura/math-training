@@ -208,5 +208,73 @@
       より，
       $i, j \in \{1, 2, 3, 4\}$かつ$i \neq j$であるすべての$(i, j)$について$x_i \neq x_j$を満たすとき，
       行列$\matsym{V}$は逆行列を持つ．
+  \end{enumerate}
       
+\clearpage
+\subsection{回転行列}
+  $\vecsym{e}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$,
+  $\vecsym{e}_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$
+  とする．
+  \begin{enumerate}[label=(\roman*)]
+    \item $\vecsym{e}'_1 = \begin{pmatrix} \cos\theta \\ \sin\theta \end{pmatrix}$,
+      $\vecsym{e}'_2 = \begin{pmatrix} -\sin\theta \\ \cos\theta \end{pmatrix}$
+    \item 
+      \begin{equation}
+        \begin{pmatrix} \vecsym{e}'_1 & \vecsym{e}'_2 \end{pmatrix}
+        = \matsym{R}_{\theta} \begin{pmatrix} \vecsym{e}_1 & \vecsym{e}_2 \end{pmatrix}
+      \end{equation}
+      より，
+      \begin{equation}
+        \begin{pmatrix}
+          \cos\theta & -\sin\theta \\
+          \sin\theta & \cos\theta
+        \end{pmatrix}
+        = \matsym{R}_{\theta}
+        \begin{pmatrix}
+          1 & 0 \\
+          0 & 1
+        \end{pmatrix}.
+      \end{equation}
+      したがって，
+      \begin{equation}
+        \matsym{R}_\theta =
+          \begin{pmatrix}
+            \cos\theta & -\sin\theta \\
+            \sin\theta & \cos\theta
+          \end{pmatrix}
+      \end{equation}
+    \item
+      \begin{align}
+        \vecsym{\nu} &= \matsym{R}_\phi \matsym{R}_\theta \vecsym{e}_1 \\
+          &=
+          \begin{pmatrix}
+            \cos\theta & -\sin\theta \\
+            \sin\theta & \cos\theta
+          \end{pmatrix}
+          \begin{pmatrix}
+            \cos\theta & -\sin\theta \\
+            \sin\theta & \cos\theta
+          \end{pmatrix}
+          \vecsym{e}_1\\
+          &=
+          \begin{pmatrix}
+            \cos\theta \cos\phi - \sin\theta \sin\phi \\
+            \sin\theta \cos\phi + \cos\theta \sin\phi
+          \end{pmatrix}
+      \end{align}
+    \item
+      \begin{equation}
+        \matsym{R}_{-\theta} 
+          =
+          \begin{pmatrix}
+            \cos\theta  & \sin\theta \\
+            -\sin\theta & \cos\theta
+          \end{pmatrix}
+      \end{equation}
+      であり，
+      \begin{equation}
+        \matsym{R}_\theta \matsym{R}_{-\theta} = \matsym{R}_{\theta} \matsym{R}_\theta = \matsym{I}
+      \end{equation}
+      （$\matsym{I}$は単位行列）
+      より，$\matsym{R}_\theta^{-1} = \matsym{R}_{-\theta}$.
   \end{enumerate}
