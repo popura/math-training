@@ -107,15 +107,6 @@
       必要であれば、$N$で場合分けしてください．
   \end{enumerate}
 
-\subsection{固有値，固有ベクトル}
-    4次元ベクトル $\vecsym{x} = \begin{pmatrix} a \\ b \\ c \\ d \end{pmatrix}$ に対し，
-    要素を巡回的にシフトした $\vecsym{y} = \begin{pmatrix} b \\ c \\ d \\ a \end{pmatrix}$を考える．
-    \begin{enumerate}[label=(\roman*)]
-      \item $\vecsym{y} = \matsym{P}\vecsym{x}$ となるような，4x4の行列 $\matsym{P}$ を求めよ．
-      \item $\matsym{P}v = \lambda \vecsym{v}$ ($\lambda$はスカラー) となるようなベクトル $\vecsym{v}$，
-        すなわち，$\matsym{P}$ の固有ベクトルをすべて求めよ．
-    \end{enumerate}
-
 \subsection{行列式と逆行列の存在条件}
     $i, j \in \numset{N}, a_{ij} \in \numset{C}$ のとき，
     行列
@@ -195,26 +186,40 @@
     \item $\matsym{R}_\theta$の逆行列を求めよ．
   \end{enumerate}
 
-\subsection{エルミート行列の性質}
-  エルミート行列$\matsym{A}$の固有値分解$\matsym{A} = \matsym{U}\matsym{\Lambda}\matsym{U}^{-1}$を考える．
+\subsection{エルミート行列}
+  $\matsym{A} = \htp{\matsym{A}}$を満たす行列$\matsym{A}$をエルミート行列$\matsym{A}$と呼ぶ．
+  ここで， $\htp{\cdot}$ はエルミート転置を表す．
+  また，エルミート行列$\matsym{A}$の固有値分解を$\matsym{A} = \matsym{U}\matsym{\Lambda}\matsym{U}^{-1}$と置く．
+  以下の問いに答えよ．
   \begin{enumerate}[label=(\roman*)]
-    % \item エルミート行列$\matsym{A}$の異なる固有値に対応する固有ベクトルが，任意の内積について直交することを示せ．
-    \item 任意の複素ベクトル$\vecsym{v}=\tp{(v_1, \cdots, v_n)}$のとき，
-      $\htp{\vecsym{v}} \vecsym{v} \geq 0$を証明せよ．
-      ここで， $\htp{\cdot}$ はエルミート転置を表す．
-    \item もしくはエルミート行列の固有値$\lambda$が実数になることを証明せよ．
-    \item エルミート行列$\matsym{A}$の固有値分解が
-      $\matsym{A} = \matsym{U}\matsym{\Lambda}\htp{\matsym{U}}$ として与えられることを示せ．
-    \item フルランクを持つエルミート行列$\matsym{A}$の逆行列$\matsym{A}^{-1}$が，
-      $\matsym{A}^{-1} = \matsym{U}\matsym{\Lambda}^{-1}\htp{\matsym{U}}$として与えられることを示せ．
+    \item 任意の$n \times m$行列$\matsym{M} \in \numset{C}^{n \times m}$について，
+      $\matsym{M}\htp{\matsym{M}}$と$\htp{\matsym{M}}\matsym{M}$がそれぞれエルミート行列となることを示せ．
+    \item エルミート行列の固有値$\lambda$が実数になることを証明せよ．
+    \item 行列$\matsym{U}$がユニタリ行列になることを示せ．
+  \end{enumerate}
+  上の問いが難しい場合には，代わりに以下の問いに解答すること．
+  \begin{enumerate}[label=(\roman*${}^\prime$)]
+    \item ある行列$\matsym{M} \in \numset{C}^{n \times m}$を定め，
+      $\matsym{M}\htp{\matsym{M}}$と$\htp{\matsym{M}}\matsym{M}$がそれぞれエルミート行列となることを確かめよ．
+      ただし，$n, m \ge 2$かつ$n \neq m$とし，行列$\matsym{M}$には実数でない要素を含むものとする．
+    \item $\matsym{M}\htp{\matsym{M}}$の固有値$\lambda$が実数になることを確かめよ．
+    \item $\matsym{M}\htp{\matsym{M}}$がユニタリ行列$\matsym{U}$を用いて対角化されることを確かめよ．
   \end{enumerate}
 
 \subsection{特異値分解 \label{linalg:svd}}
-  行列$\matsym{A}$は，各行が直交する行列$\matsym{U}, \matsym{V}$，
-  および対角行列$\matsym{\Sigma}$を用いて
+  任意の行列$\matsym{A}$は，
   $\matsym{A}=\matsym{U}\matsym{\Sigma}\htp{\matsym{V}}$の形に分解できる．
-  これを特異値分解と呼ぶ．ここで，$\htp{\cdot}$はエルミート転置を表す．
+  これを特異値分解と呼ぶ．
+  ここで，$\htp{\cdot}$はエルミート転置を表す．
+  また，$\matsym{U}$と$\matsym{V}$はユニタリ行列であり，
+  $\matsym{\Sigma}$は対角行列である．
+
   \begin{enumerate}[label=(\roman*)]
+    \item $\matsym{U}$が，$\matsym{A}\htp{\matsym{A}}$の固有ベクトルを並べた行列と一致することを示せ．
+    \item $\matsym{V}$が，$\htp{\matsym{A}}\matsym{A}$の固有ベクトルを並べた行列と一致することを示せ．
+    \item $\matsym{\Sigma}$が，
+      $\matsym{A}\htp{\matsym{A}}$（または$\htp{\matsym{A}}\matsym{A}$）の固有値の平方根を対角に持つ
+      行列であることを示せ．
     \item
       \begin{equation}
         \matsym{A} =
@@ -225,7 +230,7 @@
           \end{pmatrix}
       \end{equation}
       の特異値分解を求めよ．
-    \item
+    \item \label{svd:large}
       \begin{equation}
         \matsym{A} =
           \begin{pmatrix}
@@ -235,7 +240,7 @@
             1 & 3 & 2 & -3
           \end{pmatrix}
       \end{equation}の特異値分解を求めよ．
-      ただし，この特異値分解に限り，プログラム等を用いて解答してもよい．
+      ただし，\ref{svd:large}に限り，プログラム等を用いて解答してもよい．
   \end{enumerate}
 
 \subsection{Moore-Penroseの擬似逆行列}
