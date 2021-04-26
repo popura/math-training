@@ -189,17 +189,26 @@
 \subsection{エルミート行列}
   $\matsym{A} = \htp{\matsym{A}}$を満たす行列$\matsym{A}$をエルミート行列$\matsym{A}$と呼ぶ．
   ここで， $\htp{\cdot}$ はエルミート転置を表す．
-  また，エルミート行列$\matsym{A}$の固有値分解を$\matsym{A} = \matsym{U}\matsym{\Lambda}\matsym{U}^{-1}$と置く．
+  %また，エルミート行列$\matsym{A}$の固有値分解を$\matsym{A} = \matsym{U}\matsym{\Lambda}\matsym{U}^{-1}$と置く．
   以下の問いに答えよ．
+  %\begin{enumerate}[label=(\roman*)]
+  %  \item 任意の$n \times m$行列$\matsym{M} \in \numset{C}^{n \times m}$について，
+  %    $\matsym{M}\htp{\matsym{M}}$と$\htp{\matsym{M}}\matsym{M}$がそれぞれエルミート行列となることを示せ．
+  %  \item エルミート行列の固有値$\lambda$が実数になることを証明せよ．
+  %  \item 行列$\matsym{U}$がユニタリ行列になることを示せ．
+  %\end{enumerate}
+  %上の問いが難しい場合には，代わりに以下の問いに解答すること．
   \begin{enumerate}[label=(\roman*)]
-    \item 任意の$n \times m$行列$\matsym{M} \in \numset{C}^{n \times m}$について，
-      $\matsym{M}\htp{\matsym{M}}$と$\htp{\matsym{M}}\matsym{M}$がそれぞれエルミート行列となることを示せ．
-    \item エルミート行列の固有値$\lambda$が実数になることを証明せよ．
-    \item 行列$\matsym{U}$がユニタリ行列になることを示せ．
-  \end{enumerate}
-  上の問いが難しい場合には，代わりに以下の問いに解答すること．
-  \begin{enumerate}[label=(\roman*${}^\prime$)]
-    \item ある行列$\matsym{M} \in \numset{C}^{n \times m}$を定め，
+    \item ある行列$\matsym{M} \in \numset{C}^{n \times m}$を具体的に定め
+      （例えば，
+        \begin{equation}
+          \matsym{M} =
+            \begin{pmatrix}
+              1     & i  & 2 \\
+              1 - i & -3 & 0 \\
+            \end{pmatrix}
+        \end{equation}
+        など），
       $\matsym{M}\htp{\matsym{M}}$と$\htp{\matsym{M}}\matsym{M}$がそれぞれエルミート行列となることを確かめよ．
       ただし，$n, m \ge 2$かつ$n \neq m$とし，行列$\matsym{M}$には実数でない要素を含むものとする．
     \item $\matsym{M}\htp{\matsym{M}}$の固有値$\lambda$が実数になることを確かめよ．

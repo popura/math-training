@@ -278,3 +278,41 @@
       （$\matsym{I}$は単位行列）
       より，$\matsym{R}_\theta^{-1} = \matsym{R}_{-\theta}$.
   \end{enumerate}
+
+
+\clearpage
+\subsection{エルミート行列}
+  \begin{enumerate}[label=(\roman*)]
+    \item 任意の行列$\matsym{M} \in \numset{C}^{n \times m}$について，
+      $\matsym{M}\htp{\matsym{M}}$および
+      $\htp{\matsym{M}}\matsym{M}$
+      がエルミート行列となることを証明する．
+      $\htp{(\matsym{M}\tilde{\matsym{M}})} = \htp{\tilde{\matsym{M}}}\htp{\matsym{M}}$より，
+      $\htp{(\matsym{M}\htp{\matsym{M}})} = \htp{(\htp{\matsym{M}})}\htp{\matsym{M}} = \matsym{M}\htp{\matsym{M}}$
+      であるため，$\matsym{M}\htp{\matsym{M}}$はエルミート行列．
+      同様に，$\htp{\matsym{M}}\matsym{M}$もエルミート行列．
+      
+    \item 任意のエルミート行列$\matsym{A} \in \numset{C}^{n \times n}$について，
+      すべての固有値が実数となることを証明する．
+      定義より，行列$\matsym{A}$の固有値$\lambda$と固有ベクトル$\vecsym{v}$は，
+      $\matsym{A}\vecsym{v} = \lambda \vecsym{v}$を満たす．
+      よって，
+      \begin{align}
+        \htp{vecsym{v}} \matsym{A} \vecsym{v}
+        = \htp{vecsym{v}} \lambda \vecsym{v}
+        = \lambda \htp{vecsym{v}} \vecsym{v}.
+      \end{align}
+      また，
+      \begin{align}
+        \htp{vecsym{v}} \htp{\matsym{A}} \vecsym{v}
+        = \htp{(\matsym{A} vecsym{v})} \vecsym{v}
+        = \htp{(\lambda vecsym{v})} \vecsym{v}
+        = \overline{\lambda} \htp{vecsym{v}} \vecsym{v}.
+      \end{align}
+      したがって，$\lambda = \overline{\lambda}$でなければならないため，
+      $\lambda$は実数．
+    
+    \item 任意のエルミート行列$\matsym{A} \in \numset{C}^{n \times n}$について，
+      $\matsym{A}$があるユニタリ行列$\matsym{U}$で対角化されることを証明する．
+      
+  \end{enumerate}
