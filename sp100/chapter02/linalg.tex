@@ -215,20 +215,23 @@
     \item $\matsym{M}\htp{\matsym{M}}$がユニタリ行列$\matsym{U}$を用いて対角化されることを確かめよ．
   \end{enumerate}
 
+\clearpage
 \subsection{特異値分解 \label{linalg:svd}}
-  任意の行列$\matsym{A}$は，
+  任意の$n \times m$行列$\matsym{A}$は，
   $\matsym{A}=\matsym{U}\matsym{\Sigma}\htp{\matsym{V}}$の形に分解できる．
   これを特異値分解と呼ぶ．
-  ここで，$\htp{\cdot}$はエルミート転置を表す．
-  また，$\matsym{U}$と$\matsym{V}$はユニタリ行列であり，
-  $\matsym{\Sigma}$は対角行列である．
+  ここで，$\htp{\cdot}$はエルミート転置を表し，
+  $\matsym{U}$と$\matsym{V}$はユニタリ行列である．
+  $\matsym{\Sigma}$は，
+  左上のブロックが対角行列で残りのブロックがすべて零行列であるような
+  $n \times m$の行列である．
 
   \begin{enumerate}[label=(\roman*)]
-    \item $\matsym{U}$が，$\matsym{A}\htp{\matsym{A}}$の固有ベクトルを並べた行列と一致することを示せ．
-    \item $\matsym{V}$が，$\htp{\matsym{A}}\matsym{A}$の固有ベクトルを並べた行列と一致することを示せ．
+    \item $\matsym{U}$が，$\matsym{A}\htp{\matsym{A}}$の固有ベクトルを並べた行列として与えられることを示せ．
+    \item $\matsym{V}$が，$\htp{\matsym{A}}\matsym{A}$の固有ベクトルを並べた行列として与えられることを示せ．
     \item $\matsym{\Sigma}$が，
-      $\matsym{A}\htp{\matsym{A}}$（または$\htp{\matsym{A}}\matsym{A}$）の固有値の平方根を対角に持つ
-      行列であることを示せ．
+      $\matsym{A}\htp{\matsym{A}}$（または$\htp{\matsym{A}}\matsym{A}$）の固有値の平方根を
+      対角に並べた行列であることを示せ．
     \item
       \begin{equation}
         \matsym{A} =
@@ -378,3 +381,14 @@
     関数$f_n(\vecsym{x})$が$f_n(\vecsym{x}) = \vecsym{x}$として与えられるとき，
     $k$層のニューラルネットワークと等価な$1$層のニューラルネットワークが存在することを示せ
 
+
+\subsection{内積}
+    \begin{enumerate}[label=(\roman*)]
+      \item $\vecsym{x} = (x_1, \cdots, x_n), \vecsym{y}=(y_1, \cdots, y_n) \in C^n$
+        $\ip{\vecsym{x}}{\vecsym{y}} = \sum_{i=1}^n x_i \overline{y_i}$
+      \item $\ell^2 = \{ (x_n)_{n=1}^{\infty} | x_n \in \numset{C}, \sum_{n=1}^\infty \| x_n \|^2 \le \infty \}$
+        $\ip{\vecsym{x}}{\vecsym{y}} = \sum_{i=1}^\infty x_i \overline{y_i}$
+      \item $L^2(\Omega) = \{ f: \Omega \rightarrow \numset{C} | \int_\Omega \| f(\omega) \|^2 \le \infty \}$
+        $\ip{\vecsym{x}}{\vecsym{y}} = \int_\Omega x(\omega) \overline{y(\omega)} d\omega$
+        複素正弦波が直交していることを確認せよ．
+    \end{enumerate}

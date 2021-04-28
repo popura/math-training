@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.1)  26 APR 2021 16:52
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.1)  28 APR 2021 22:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -179,46 +179,46 @@ File: l3backend-dvips.def 2020-09-24 L3 backend support: dvips
 ) (out/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 31.
+(Font)              scaled to size 9.60999pt on input line 32.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 31.
+(Font)              scaled to size 9.60999pt on input line 32.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 31.
+(Font)              scaled to size 13.83836pt on input line 32.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 31.
+(Font)              scaled to size 13.83836pt on input line 32.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 42.
+(Font)              scaled to size 13.83836pt on input line 43.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 42.
+(Font)              scaled to size 13.83836pt on input line 43.
 (out/main.toc
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 3.
@@ -264,30 +264,32 @@ Package enumitem Warning: Negative labelwidth. This does not make much
 
 [4
 
-] [5] [6] [7]) [8] (./chapter03/calculus.tex [9
+] [5] [6] [7
 
-]) [10] (./chapter04/statistics.tex) [11
+] [8]) [9] (./chapter03/calculus.tex [10
 
-] (./chapter05/signal.tex) [12
+]) [11] (./chapter04/statistics.tex) [12
 
-] (./chapter06/fourier.tex) [13
+] (./chapter05/signal.tex) [13
 
-] (./chapter07/lti_system.tex) [14
+] (./chapter06/fourier.tex) [14
 
-] (./chapter08/multirate.tex) [15
+] (./chapter07/lti_system.tex) [15
 
-] (./chapter09/acoustic_signal.tex) [16
+] (./chapter08/multirate.tex) [16
 
-] (./chapter10/image_signal.tex) [17
+] (./chapter09/acoustic_signal.tex) [17
+
+] (./chapter10/image_signal.tex) [18
 
 ] (out/main.aux) ) 
 Here is how much of TeX's memory you used:
- 3526 strings out of 479956
- 56236 string characters out of 5887571
- 353982 words of memory out of 5000000
- 20689 multiletter control sequences out of 15000+600000
+ 3527 strings out of 479956
+ 56238 string characters out of 5887571
+ 353997 words of memory out of 5000000
+ 20690 multiletter control sequences out of 15000+600000
  548206 words of font info for 89 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  66i,9n,74p,358b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/main.dvi (17 pages, 56428 bytes).
+Output written on out/main.dvi (18 pages, 61208 bytes).

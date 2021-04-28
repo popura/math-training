@@ -316,3 +316,85 @@
       $\matsym{A}$があるユニタリ行列$\matsym{U}$で対角化されることを証明する．
       
   \end{enumerate}
+
+  \clearpage
+  \subsection{特異値分解}
+    \begin{enumerate}[label=(\roman*)]
+      \item $\matsym{A} = \matsym{U}\matsym{\Sigma}\htp{\matsym{V}}$より，
+        \begin{align}
+          \matsym{A}\htp{\matsym{A}} &= \matsym{U}\matsym{\Sigma}\htp{\matsym{V}}\htp{(\matsym{U}\matsym{\Sigma}\htp{\matsym{V}})} \\
+            &= \matsym{U}\matsym{\Sigma}\htp{\matsym{V}}\matsym{V}\htp{\matsym{\Sigma}}\htp{\matsym{U}}.
+        \end{align}
+        ここで，$\matsym{V}$はユニタリ行列だから，
+        $\htp{\matsym{V}}\matsym{V} = \matsym{I}$ ($\matsym{I}$は単位行列)．
+        よって，
+        \begin{equation}
+          \matsym{A}\htp{\matsym{A}} = \matsym{U}\matsym{\Sigma}\htp{\matsym{\Sigma}}\htp{\matsym{U}}.
+        \end{equation}
+        $\matsym{\Sigma}\htp{\matsym{\Sigma}}$は対角行列となるため，
+        $\matsym{\Sigma}\htp{\matsym{\Sigma}} = \matsym{\Lambda}$とおけば，
+        \begin{equation}
+          \matsym{A}\htp{\matsym{A}} = \matsym{U}\matsym{\Lambda}\htp{\matsym{U}}
+        \end{equation}
+        であり，これは，$\matsym{A}\htp{\matsym{A}}$の固有値分解である．
+        よって$\matsym{U}$は，$\matsym{A}\htp{\matsym{A}}$の
+        （ノルムが1に正規化された）固有ベクトルを並べた行列として与えられる．
+      \item 同様に，
+        $\htp{\matsym{\Sigma}}\matsym{\Sigma} = \matsym{\Lambda}'$とおけば，
+        \begin{equation}
+          \htp{\matsym{A}}\matsym{A} = \matsym{V}\matsym{\Lambda}'\htp{\matsym{V}}
+        \end{equation}
+        であり，これは，$\htp{\matsym{A}}\matsym{A}$の固有値分解である．
+        よって$\matsym{V}$は，$\htp{\matsym{A}}\matsym{A}$の
+        （ノルムが1に正規化された）固有ベクトルを並べた行列として与えられる．
+      \item $\matsym{\Sigma}\htp{\matsym{\Sigma}} = \matsym{\Lambda}$であり，
+        $\matsym{\Lambda}$の$(i, i)$要素は$\matsym{\Sigma}$の$(i, i)$要素の自乗である．
+        また，
+        $\matsym{\Lambda}$は$\matsym{A}\htp{\matsym{A}}$の固有値を対角に並べた行列である．
+        したがって，$\matsym{\Sigma}$は，
+        $\matsym{A}\htp{\matsym{A}}$の固有値の平方根を対角並べた行列となる．
+      \item $\matsym{A}$が縦長行列であるため，
+        $\matsym{A}\htp{\matsym{A}}$の固有値分解より
+        $\htp{\matsym{A}}\matsym{A}$の固有値分解のほうが簡単である．
+        $\htp{\matsym{A}}\matsym{A}$の固有値分解のほうが簡単である．
+        \begin{align}
+          \htp{\matsym{A}}\matsym{A}
+            &= 
+              \begin{pmatrix}
+                1 & 1 & 0 \\
+                1 & -1 & 1
+              \end{pmatrix}
+              \begin{pmatrix}
+                1 & 1 \\
+                1 & -1 \\
+                0 & 1
+              \end{pmatrix} \\
+            &=
+              \begin{pmatrix}
+                2 & 0 \\
+                0 & 3 
+              \end{pmatrix}
+        \end{align}
+        より，固有値は$2, 3$であり，
+        対応する固有ベクトルはそれぞれ$\tp{(a, 0)}, \tp{(0, b)}$である
+        （ただし，$a, b$は任意のスカラー）．
+        よって，$a = b = 1$とすれば，
+        \begin{equation}
+          \matsym{V} = 
+          \begin{pmatrix}
+            1 & 0 \\
+            0 & 1 
+          \end{pmatrix},
+          \matsym{\Sigma} =
+          \begin{pmatrix}
+            \sqrt{2} & 0 \\
+            0 & \sqrt{3} \\
+            0 & 0
+          \end{pmatrix}
+        \end{equation}
+        を得る．
+        また，$\matsym{A} = \matsym{U}\matsym{\Sigma}\htp{\matsym{V}}$より，
+        $\matsym{U} = \matsym{A}\htp{\matsym{V}}$
+        
+
+    \end{enumerate}
