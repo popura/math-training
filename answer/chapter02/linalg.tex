@@ -1,6 +1,6 @@
 \section{線形代数の基礎}
 
-\subsection{連立方程式}
+\subsection{連立方程式\label{linalg:linear_system}}
   \vspace{1mm}
   \begin{enumerate}[label=(\roman*)]
     \item
@@ -395,6 +395,66 @@
         を得る．
         また，$\matsym{A} = \matsym{U}\matsym{\Sigma}\htp{\matsym{V}}$より，
         $\matsym{U} = \matsym{A}\htp{\matsym{V}}$
-        
 
     \end{enumerate}
+
+  \clearpage
+  \subsection{Moore-Penroseの擬似逆行列}
+    方程式$\matsym{A}\vecsym{x} = \vecsym{b}$は，
+    $\matsym{A}$が正則行列であれば，その逆行列を用いて
+    $\vecsym{x} = \matsym{A}^{-1}\vecsym{b}$として解くことができる．
+    任意の行列$\matsym{A}$については，
+    その擬似逆行列を用いて
+    $\vecsym{x} = \pinv{\matsym{A}}\vecsym{b}$として一つの（近似）解を得ることができる．
+    その解は，
+    \begin{itemize}[nosep]
+      \item 方程式$\matsym{A}\vecsym{x} = \vecsym{b}$が決定系のときには，
+        その解$\vecsym{x}$
+      \item 方程式$\matsym{A}\vecsym{x} = \vecsym{b}$が優決定系のときには，
+        $\|\matsym{A} \vecsym{x} - \vecsym{b} \|$ が最小となる $\vecsym{x}$
+      \item 方程式$\matsym{A}\vecsym{x} = \vecsym{b}$が劣決定系のときには，
+        $\matsym{A} \vecsym{x} - \vecsym{b} = \vecsym{0}$の解$\vecsym{x}$のうち，$\|\vecsym{x}\|$が最小となる$\vecsym{x}$
+    \end{itemize}
+    に一致する．
+    
+    \begin{enumerate}[label=(\roman*)]
+      \item
+        \begin{align}
+          \pinv{\matsym{A}} &=
+            \begin{pmatrix}
+              \dfrac{1}{2} & \dfrac{1}{2} & 0 \\[1.5ex]
+              \dfrac{1}{3} & -\dfrac{1}{3} & \dfrac{1}{3}
+            \end{pmatrix} \\
+          \pinv{\matsym{A}} \vecsym{b} &=
+            \begin{pmatrix}
+              1 \\[1.5ex]
+              \dfrac{2}{3}
+            \end{pmatrix} \\
+        \end{align}
+        よって，
+        \ref{linalg:linear_system}(ii)で計算した$\vecsym{x}$と等しい．
+      
+      \item
+        \begin{align}
+          \pinv{\matsym{A}} &=
+            \frac{1}{735}
+            \begin{pmatrix}
+               23 &  -26 & 143 &   9 \\
+               97 &  146 & -68 &   6 \\
+              -43 & -239 & 212 & 111 \\
+              -8  &   41 & 142 & -99
+            \end{pmatrix}\\
+          \pinv{\matsym{A}} \vecsym{b} &=
+            \frac{1}{7}
+            \begin{pmatrix}
+              -3 \\
+               5 \\
+              -9 \\
+              -2 \\
+            \end{pmatrix} \\
+        \end{align}
+        よって，
+        \ref{linalg:linear_system}(iii)で計算した$\vecsym{x}$と等しい．
+    \end{enumerate}
+        
+

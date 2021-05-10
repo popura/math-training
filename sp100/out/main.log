@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.1)  28 APR 2021 22:07
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.12.1)  10 MAY 2021 09:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -266,21 +266,23 @@ Package enumitem Warning: Negative labelwidth. This does not make much
 
 ] [5] [6] [7
 
-] [8]) [9] (./chapter03/calculus.tex [10
+] [8
 
-]) [11] (./chapter04/statistics.tex) [12
+] [9]) [10] (./chapter03/calculus.tex [11
 
-] (./chapter05/signal.tex) [13
+]) [12] (./chapter04/statistics.tex) [13
 
-] (./chapter06/fourier.tex) [14
+] (./chapter05/signal.tex) [14
 
-] (./chapter07/lti_system.tex) [15
+] (./chapter06/fourier.tex) [15
 
-] (./chapter08/multirate.tex) [16
+] (./chapter07/lti_system.tex) [16
 
-] (./chapter09/acoustic_signal.tex) [17
+] (./chapter08/multirate.tex) [17
 
-] (./chapter10/image_signal.tex) [18
+] (./chapter09/acoustic_signal.tex) [18
+
+] (./chapter10/image_signal.tex) [19
 
 ] (out/main.aux) ) 
 Here is how much of TeX's memory you used:
@@ -292,4 +294,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  66i,9n,74p,358b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/main.dvi (18 pages, 61208 bytes).
+Output written on out/main.dvi (19 pages, 61384 bytes).
