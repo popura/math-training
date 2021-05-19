@@ -1,0 +1,30 @@
+\section{確率統計の基礎}
+
+\subsection{最小二乗法の閉形式解}
+  \begin{enumerate}[label=(\roman*)]
+    \item
+      \begin{align}
+        \mathcal{L}(\vecsym{x}) &= \tp{(\matsym{A}\vecsym{x} - \vecsym{b})} (\matsym{A}\vecsym{x} - \vecsym{b}) \\
+          &= (\tp{\vecsym{x}}\tp{\matsym{A}} - \tp{\vecsym{b}}) (\matsym{A}\vecsym{x} - \vecsym{b}) \\
+          &= \tp{\vecsym{x}}\tp{\matsym{A}}\matsym{A}\vecsym{x} - \tp{\vecsym{x}}\tp{\matsym{A}}\vecsym{b} - \tp{\vecsym{b}}\matsym{A}\vecsym{x} - \tp{\vecsym{b}}\vecsym{b} \\
+          &= \tp{\vecsym{x}}\tp{\matsym{A}}\matsym{A}\vecsym{x} - 2\tp{\vecsym{x}}\tp{\matsym{A}}\vecsym{b} - \tp{\vecsym{b}}\vecsym{b}
+      \end{align}
+      より，
+      \begin{equation}
+        \frac{\partial}{\partial \vecsym{x}} \mathcal{L}(\vecsym{x}) = 2 \tp{\matsym{A}}\matsym{A}\vecsym{x} - 2\tp{\matsym{A}}\vecsym{b}
+      \end{equation}
+    \item $\mathcal{L}(\vecsym{x})$を最小にする$\vecsym{x}$は，
+      \begin{equation}
+        \frac{\partial}{\partial \vecsym{x}} \mathcal{L}(\vecsym{x}) = \vecsym{0}
+      \end{equation}
+      を満たす．
+      したがって，$\vecsym{x}$が満たすべき条件は，
+      \begin{equation}
+        \tp{\matsym{A}}\matsym{A}\vecsym{x} = \tp{\matsym{A}}\vecsym{b}
+      \end{equation}
+      （正規方程式）
+    \item $\tp{\matsym{A}}\matsym{A}$が正則であることから，
+      \begin{equation}
+        \vecsym{x} = (\tp{\matsym{A}}\matsym{A})^{-1}\tp{\matsym{A}}\vecsym{b}
+      \end{equation}
+  \end{enumerate}

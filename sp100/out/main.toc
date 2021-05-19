@@ -16,13 +16,13 @@
 \contentsline {section}{\numberline {3}微積分}{11}{}%
 \contentsline {subsection}{\numberline {問1}勾配ベクトル}{11}{}%
 \contentsline {subsection}{\numberline {問2}勾配，行列}{11}{}%
-\contentsline {subsection}{\numberline {問3}微分の連鎖律}{12}{}%
-\contentsline {subsection}{\numberline {問4}最急降下法}{12}{}%
+\contentsline {subsection}{\numberline {問3}最急降下法}{12}{}%
+\contentsline {subsection}{\numberline {問4}微分の連鎖律}{12}{}%
 \contentsline {section}{\numberline {4}確率統計の基礎}{13}{}%
 \contentsline {subsection}{\numberline {問1}確率モーメント}{13}{}%
 \contentsline {subsection}{\numberline {問2}確率分布}{13}{}%
 \contentsline {subsection}{\numberline {問3}分散共分散行列}{13}{}%
-\contentsline {subsection}{\numberline {問4}最小二乗法}{13}{}%
+\contentsline {subsection}{\numberline {問4}最小二乗法の閉形式解}{13}{}%
 \contentsline {subsection}{\numberline {問5}最尤推定}{13}{}%
 \contentsline {subsection}{\numberline {問6}主成分分析}{13}{}%
 \contentsline {section}{\numberline {5}連続信号と離散信号}{14}{}%

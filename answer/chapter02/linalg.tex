@@ -458,3 +458,26 @@
     \end{enumerate}
         
 
+  \clearpage
+  \subsection{深層学習？}
+    $f_n(\vecsym{x}) = \vecsym{x}$より，
+    $f(\vecsym{x})$は
+    \begin{equation}
+      f(\vecsym{x}) = \matsym{W}_k (\matsym{W}_{k-1} (\cdots \matsym{W}_2 (\matsym{W}_1 \vecsym{x} + \vecsym{b}_1) + \vecsym{b}_2) \cdots) + \vecsym{b}_{k-1}) + \vecsym{b}_k
+    \end{equation}
+    となる．
+    かっこを展開して整理すると
+    \begin{equation}
+      f(\vecsym{x}) = \matsym{W}_k \matsym{W}_{k-1} \cdots \matsym{W}_2 \matsym{W}_1 \vecsym{x} + \matsym{W}_k \matsym{W}_{k-1} \cdots \matsym{W}_2 \vecsym{b}_1 + \matsym{W}_k \matsym{W}_{k-1} \cdots \matsym{W}_3 \vecsym{b}_2 + \cdots + \matsym{W}_k \vecsym{b}_{k-1} + \vecsym{b}_k
+    \end{equation}
+    が得られる．
+    ここで，
+    $\matsym{W}_k \matsym{W}_{k-1} \cdots \matsym{W}_2 \matsym{W}_1$
+    および
+    $\matsym{W}_k \matsym{W}_{k-1} \cdots \matsym{W}_2 \vecsym{b}_1 + \matsym{W}_k \matsym{W}_{k-1} \cdots \matsym{W}_3 \vecsym{b}_2 + \cdots + \matsym{W}_k \vecsym{b}_{k-1} + \vecsym{b}_k$
+    をそれぞれ，新たに$\matsym{W}$，$\vecsym{b}$とおくと，$f(\vecsym{x}) = \matsym{W} \vecsym{x} + \vecsym{b}$
+    となる．
+    これは，$f_1(\vecsym{x}) = \vecsym{x}$である1層のニューラルネットワークである．
+    すなわち，$f_n(\vecsym{x}) = \vecsym{x}$のとき，
+    $k$層のニューラルネットワークと等価な$1$層のニューラルネットワークが存在する．
+

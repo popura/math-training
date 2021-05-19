@@ -1,0 +1,71 @@
+\section{微積分}
+
+\subsection{最小二乗法の閉形式解}
+  \begin{enumerate}[label=(\roman*)]
+    \item
+      \begin{align}
+        \mathcal{L}(\vecsym{x}) &= \tp{(\matsym{A}\vecsym{x} - \vecsym{b})} (\matsym{A}\vecsym{x} - \vecsym{b}) \\
+          &= (\tp{\vecsym{x}}\tp{\matsym{A}} - \tp{\vecsym{b}}) (\matsym{A}\vecsym{x} - \vecsym{b}) \\
+          &= \tp{\vecsym{x}}\tp{\matsym{A}}\matsym{A}\vecsym{x} - \tp{\vecsym{x}}\tp{\matsym{A}}\vecsym{b} - \tp{\vecsym{b}}\matsym{A}\vecsym{x} - \tp{\vecsym{b}}\vecsym{b} \\
+          &= \tp{\vecsym{x}}\tp{\matsym{A}}\matsym{A}\vecsym{x} - 2\tp{\vecsym{x}}\tp{\matsym{A}}\vecsym{b} - \tp{\vecsym{b}}\vecsym{b}
+      \end{align}
+      より，
+      \begin{equation}
+        \frac{\partial}{\partial \vecsym{x}} \mathcal{L}(\vecsym{x}) = 2 \tp{\matsym{A}}\matsym{A}\vecsym{x} - 2\tp{\matsym{A}}\vecsym{b}
+      \end{equation}
+    \item $\mathcal{L}(\vecsym{x})$を最小にする$\vecsym{x}$は，
+      \begin{equation}
+        \frac{\partial}{\partial \vecsym{x}} \mathcal{L}(\vecsym{x}) = \vecsym{0}
+      \end{equation}
+      を満たす．
+      したがって，$\vecsym{x}$が満たすべき条件は，
+      \begin{equation}
+        \tp{\matsym{A}}\matsym{A}\vecsym{x} = \tp{\matsym{A}}\vecsym{b}
+      \end{equation}
+      （正規方程式）
+    \item $\tp{\matsym{A}}\matsym{A}$が正則であることから，
+      \begin{equation}
+        \vecsym{x} = (\tp{\matsym{A}}\matsym{A})^{-1}\tp{\matsym{A}}\vecsym{b}
+      \end{equation}
+  \end{enumerate}
+
+\clearpage
+\subsection{最急降下法}
+  最急降下法のプログラムを以下に示す．
+  \begin{lstlisting}[caption=Gradient descent,label=gd]
+    import numpy as np
+
+
+    def func1(x):
+      return (1/6)*(x**6) - (3/5)*(x**5) - (x**4) + 4*(x**3)
+
+    def diff1(x):
+      return (x**5) - 3*(x**4) - 4*(x**3) + 12*(x**2)
+    
+    def gradient_descent(func, diff, x_init, learning_rate, max_iter):
+      x = x_init
+      for i in range(max_iter):
+        x = x - alpha * diff(x)
+      return x
+
+    # (1)
+    x_init = 1/2
+    alpha = 0.2
+    x = gradient_descent(func=func1, diff=diff1, x_init=x_init, learning_rate=alpha, max_iter=20)
+    print("f"x:{x}, f:{func1(x)}, f\':{diff1(x)}")
+  \end{lstlisting}
+
+  \begin{enumerate}[label=(\roman*)]
+    \item x:0.012574881004397218, f:7.928552292318071e-06, f':0.0018895031440419867
+    \item x:3.0026363348708207, f:2.7001568945390773, f':0.11921980789784925
+    \item x:-1.998144027244153, f:-18.133195794962337, f':0.14807862625745827
+    \item x:3.0, f:2.700000000000017, f':0.0
+    \item 増減表を書くと，$x=3$のとき極小値, $x=2$のとき極大値, $x=0$のとき変曲点, $x=-2$のとき最小値をとることがわかる．
+      最急降下法を用いた場合には，初期値$x_0$とパラメータ$\alpha$の値によって得られる解が変化する．
+      $\alpha$が十分小さい時には，得られる解は，傾きが$0$である点のうち初期値$x_0$から勾配の負の方向で最も近いものになる．
+      ただし，$\alpha$が小さい時には収束が遅くなる上，変曲点の近くでトラップされてしまうことがある．
+      一方，$\alpha$を大きくした場合には，(iv)のように，
+      最小値をとる点から近い点を初期値として与えた場合にも，
+      別の点へ収束してしまうことがある．
+      さらに，$\alpha$が大きい場合には，解が発散してしまうこともある（$\alpha$をより大きくして実験するとわかる）．
+  \end{enumerate}

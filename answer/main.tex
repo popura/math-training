@@ -12,6 +12,28 @@
 %\usepackage{latexsym}
 %\usepackage{psfrag}
 \usepackage{enumitem}
+
+\usepackage{listings}
+\usepackage{jvlisting}
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+
 \renewcommand{\thesubsection}{問\arabic{subsection}}
 \renewcommand{\thesubfigure}{(\alph{subfigure})}
 
@@ -40,8 +62,8 @@
 \clearpage
 \input{./chapter02/linalg.tex}
 
-% \clearpage
-% \input{./chapter03/calculus.tex}
+\clearpage
+\input{./chapter03/calculus.tex}
 
 % \clearpage
 % \input{./chapter07/lti_system.tex}

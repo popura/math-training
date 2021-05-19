@@ -16,7 +16,24 @@
     \item 半正定値
   \end{enumerate}
 
-\subsection{最小二乗法}
+\subsection{最小二乗法の閉形式解}
+  $\matsym{A}$を実行列，$\vecsym{b}$を実列ベクトルとし，
+  \begin{equation}
+    \mathcal{L}(\vecsym{x}) = \| \matsym{A}\vecsym{x} - \vecsym{b} \|^2
+    \label{eq:least_square}
+  \end{equation}
+  を最小にする列ベクトル$\vecsym{x}$を
+  求めることを考える（最小二乗法）．
+  ただし，$\matsym{A}, \vecsym{b}, \vecsym{x}$は，式(\ref{eq:least_square})の計算ができるサイズを持つものとする．
+  このとき，以下の問いに答えよ．
+  \begin{enumerate}[label=(\roman*)]
+    \item $\mathcal{L}(\vecsym{x})$を$\vecsym{x}$について微分せよ
+      （すなわち，$\frac{\partial}{\partial \vecsym{x}} \mathcal{L}(\vecsym{x})$を計算せよ）．
+    \item (i)の結果から，
+      $\mathcal{L}(\vecsym{x})$を最小にする$\vecsym{x}$が満たすべき条件を答えよ．
+    \item $\tp{\matsym{A}}\matsym{A}$が正則であるとき，
+      $\vecsym{x}$を求めよ．
+  \end{enumerate}
 
 \subsection{最尤推定}
 
