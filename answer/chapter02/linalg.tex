@@ -469,6 +469,89 @@
         よって，
         \ref{linalg:linear_system}(iii)で計算した$\vecsym{x}$と等しい．
     \end{enumerate}
+  
+
+\clearpage
+\subsection{離散畳み込みとDFT}
+  \begin{enumerate}[label=(\roman*)]
+    \item 
+      \begin{equation}
+        \matsym{L} =
+          \begin{pmatrix}
+            a_0 &   0 &   0 &   0 \\
+            a_1 & a_0 &   0 &   0 \\
+            a_2 & a_1 & a_0 &   0 \\
+            a_3 & a_2 & a_1 & a_0
+          \end{pmatrix}.
+      \end{equation}
+      線形畳み込みを行列表現するとテプリッツ行列となる．
+    \item 
+      \begin{equation}
+        \matsym{C} =
+          \begin{pmatrix}
+            a_0 & a_3 & a_2 & a_1 \\
+            a_1 & a_0 & a_3 & a_2 \\
+            a_2 & a_1 & a_0 & a_3 \\
+            a_3 & a_2 & a_1 & a_0
+          \end{pmatrix}.
+      \end{equation}
+      巡回畳み込みを行列表現すると巡回行列となる．
+    \item 
+      \begin{align}
+        \matsym{F}\matsym{C}\matsym{F}^{-1} &= \frac{1}{4} \matsym{F}\matsym{C}\htp{\matsym{F}} \\
+          &= 
+            \frac{1}{4}
+            \begin{pmatrix}
+              1 &  1 &  1&  1\\
+              1 &  j & -1& -j\\
+              1 & -1 &  1& -1\\
+              1 & -j & -1&  j
+            \end{pmatrix}
+            \begin{pmatrix}
+              a_0 & a_3 & a_2 & a_1 \\
+              a_1 & a_0 & a_3 & a_2 \\
+              a_2 & a_1 & a_0 & a_3 \\
+              a_3 & a_2 & a_1 & a_0
+            \end{pmatrix}.
+            \begin{pmatrix}
+              1 &  1 &  1&  1\\
+              1 & -j & -1&  j\\
+              1 & -1 &  1& -1\\
+              1 &  j & -1& -j
+            \end{pmatrix}
+          \\
+          &= 
+            \begin{pmatrix}
+              a_0 + a_1 + a_2 + a_3 &  0 &  0&  0\\
+              0 & a_0 + a_1 j - a_2 - a_3 j &  0&  0\\
+              0 &  0 & a_0 - a_1 + a_2 - a_3 &  0\\
+              0 &  0 &  0& a_0 - a_1 j - a_2 + a_3 j
+            \end{pmatrix}
+      \end{align}
+      より対角行列となる．
+      ちなみに，$\matsym{F}$は離散フーリエ変換を施すDFT行列である．
+      任意の巡回行列は，その要素に関わらずDFT行列により対角化される．
+      すなわち，巡回行列は，DFT行列の列ベクトルを固有ベクトルとして持つ．
+    \item
+      \begin{equation}
+        \vecsym{Y} = \matsym{F}\vecsym{y} = \matsym{F}\matsym{C}\vecsym{x} = \matsym{F}\matsym{C}\matsym{F}^{-1}\matsym{F}\vecsym{x} = \matsym{F}\matsym{C}\matsym{F}^{-1}\vecsym{X}
+      \end{equation}
+      より，
+      $\vecsym{Y} = \matsym{F}\matsym{C}\matsym{F}^{-1}\vecsym{X}$
+    \item (iii)より，$\matsym{F}\matsym{C}\matsym{F}^{-1}$は対角行列である．
+      この行列の対角要素を$D_n$とおく，すなわち，
+      \begin{align}
+        D_1 &= a_0 + a_1 + a_2 + a_3\\
+        D_2 &= a_0 + a_1 j - a_2 - a_3 j\\
+        D_3 &= a_0 - a_1 + a_2 - a_3\\
+        D_4 &= a_0 - a_1 j - a_2 + a_3 j
+      \end{align}
+      とすれば，
+      (iv)より，$Y_n = D_n X_n$が成り立つ．
+      このことは，時間領域の畳み込みが周波数領域の掛け算で表されることの線形代数的な理解を与える．
+      ちなみに，$\vecsym{D} = (D_1, D_2, D_3, D_4), \vecsym{d} = (a_0, a_1, a_2, a_3)$とおけば，
+      $\vecsym{D} = \matsym{F} \vecsym{d}$として与えられる．
+    \end{enumerate}
         
 
   \clearpage

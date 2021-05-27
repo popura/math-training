@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1621819803 "out/main.dvi" "out/main.pdf" "out/main" 1621819804
-  "out/main.dvi" 1621819803 62148 81cef7a2b51f2fabe0e139f86c6ae614 "latex"
+["dvipdf"] 1622011140 "out/main.dvi" "out/main.pdf" "out/main" 1622011141
+  "out/main.dvi" 1622011139 61920 c909278166fcaa0756d4df17be1ec280 "latex"
   (generated)
   "out/main.pdf"
-["latex"] 1621819801 "c:/Users/popura/math-training/sp100/main.tex" "out/main.dvi" "main" 1621819804
+["latex"] 1622011138 "c:/Users/popura/math-training/sp100/main.tex" "out/main.dvi" "main" 1622011141
   "c:/Users/popura/math-training/sp100/main.tex" 1621411638 2093 f47f9ecf32500b815950bbcf9ab025f6 ""
   "c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1606795815 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1606795457 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -62,7 +62,7 @@
   "c:/texlive/2020/texmf-var/web2c/eptex/platex.fmt" 1606799228 2606695 a673981aedd792c5bfc62b113ac4c661 ""
   "c:/texlive/2020/texmf.cnf" 1606799066 713 e69b156964470283e0530f5060668171 ""
   "chapter01/unix.tex" 1618295555 35 4be0ed197abac2886d455e86cfd2107d ""
-  "chapter02/linalg.tex" 1621819793 19171 10bcfc0f0f3abe2f9f0d559719f4a9eb ""
+  "chapter02/linalg.tex" 1622011137 19184 bc5851b6669b2bdfc3b38a46cf57f147 ""
   "chapter03/calculus.tex" 1621392760 4173 342876685fc3be63111c33f54e06e61f ""
   "chapter04/statistics.tex" 1621392571 1811 26509282ee2394f51ff53145e8b9dd2d ""
   "chapter05/signal.tex" 1619528499 900 30b616f0c471843f55c38f30c46596e5 ""
@@ -72,10 +72,10 @@
   "chapter09/acoustic_signal.tex" 1618557776 56 fa2106b0c9b73327f731ed1ac16474b5 ""
   "chapter10/image_signal.tex" 1618557787 62 cfa26d5afc68719fa0cbc49bf16ed095 ""
   "main.tex" 1621411638 2093 f47f9ecf32500b815950bbcf9ab025f6 ""
-  "out/main.aux" 1621819803 7705 7bb28b32c63359c20883ca2bd6d0f3dc "latex"
-  "out/main.toc" 1621819803 4788 58b117d67a096ce8e537363cc0278091 "latex"
+  "out/main.aux" 1622011139 7705 348ba158cfd62f940c26721a653bdc36 "latex"
+  "out/main.toc" 1622011139 4788 58b117d67a096ce8e537363cc0278091 "latex"
   (generated)
-  "out/main.toc"
   "out/main.aux"
   "out/main.dvi"
+  "out/main.toc"
   "out/main.log"

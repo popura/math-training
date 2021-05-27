@@ -322,28 +322,32 @@
     \end{enumerate}
 
 \subsection{離散畳み込みとDFT}
-  離散領域での畳み込みの式$y_n=\sum^{K-1}_{k=0}a_kx_{n-k}$
-  の行列表現について以下の問いに答えよ．ただし，以後は$K=4$であり，
+  離散領域での畳み込みの式
   \begin{equation}
-    \vecsym{x} = \begin{pmatrix}x_1\\x_2\\x_3\\x_4\end{pmatrix},
-    \vecsym{y} = \begin{pmatrix}y_1\\y_2\\y_3\\y_4\end{pmatrix}
+    y_n = \sum^{K-1}_{k=0} a_k x_{n-k}
+  \end{equation}
+  の行列表現について以下の問いに答えよ．
+  ただし，以後は$K=4$であり，
+  \begin{equation}
+    \vecsym{x} = \tp{(x_1, x_2, x_3, x_4)},
+    \vecsym{y} = \tp{(y_1, y_2, y_3, y_4)}
   \end{equation}
   とする．
   \begin{enumerate}[label=(\roman*)]
-    \item $x_n=0,(n \le 1)$であるとき，
-      $\vecsym{y}=\matsym{L}\vecsym{x}$となるような$4\times4$の行列$\matsym{L}$を，$a_k (k=0,1,2,3)$を用いて表せ．
+    \item $x_n = 0 (n < 1)$であるとき，
+      $\vecsym{y} = \matsym{L} \vecsym{x}$となるような$4\times4$の行列$\matsym{L}$を，$a_k (k=0,1,2,3)$を用いて表せ．
     \item 任意の$n$に対して$x_n=x_{n+4}$であるとき，
       $\vecsym{y}=\matsym{C}\vecsym{x}$となるような$4\times4$の行列$\matsym{C}$を，
       $a_k (k=0,1,2,3)$を用いて表せ．
     \item 行列$\matsym{F}$を以下のように定義する．ただし，$j$は虚数単位を表す．
       \begin{equation}
         \matsym{F} =
-          \begin{bmatrix}
+          \begin{pmatrix}
             1 &  1 &  1&  1\\
             1 &  j & -1& -j\\
             1 & -1 &  1& -1\\
             1 & -j & -1&  j
-          \end{bmatrix}.
+          \end{pmatrix}.
       \end{equation}
       このとき$a_k,(k=0,1,2,3)$によらず，
       $\matsym{F}\matsym{C}\matsym{F}^{-1}$が対角行列になることを示せ．
@@ -356,10 +360,9 @@
       せめてどれも$0$でない値を選ぶこと．
     \item $\vecsym{X}=\matsym{F}\vecsym{x}$，$\vecsym{Y}=\matsym{F}\vecsym{y}$を定義すると，
       (ii)のように$\vecsym{y}=\matsym{C}\vecsym{x}$であるとき，
-      $\matsym{Y}$を$\matsym{X}$，$\matsym{F}$，$\matsym{C}$で表せ．
-      $\matsym{Y}$の第$n$成分$Y_n$は，$\matsym{X}$の第$n$成分$X_n$を用いて$Y_n=D_nX_n$，
+      $\vecsym{Y}$を$\vecsym{X}$，$\matsym{F}$，$\matsym{C}$で表せ．
+    \item $\vecsym{Y}$の第$n$成分$Y_n$は，$\vecsym{X}$の第$n$成分$X_n$を用いて$Y_n=D_nX_n$，
       と表すことができることを示せ．また，$D_1,D_2,D_3,D_4$を求めよ．
-
       補足：(iii)のように適当な$X_k$，$Y_k$を自身で定めることも可とする．
     \end{enumerate}
 
